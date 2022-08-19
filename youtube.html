@@ -5,27 +5,47 @@
         <link rel="stylesheet" href="general.css">
         <link rel="stylesheet" href="maincontent.css">
         <style>
-            .thumbnail-container{
-                position:relative;
-            }
-            .video-duration{
-                position:absolute;
-                right: 8px;
-                bottom: 10px;
-
-
-                color: white;
-                background-color: rgb(57, 57, 57);
-                font-size: 13px;
-                font-weight: bold;
-                
-                padding: 2px 3px 1px 5px;
-                
-                border-radius: 3px;   
-            }
+           .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            z-index: 100;
+           }
+           .header-right{
+            display: flex;
+            flex-direction: row;
+           }
+           .header-middle{
+            display: flex;
+            flex-direction: row;
+           }
+           .header-left{
+            display: flex;
+            flex-direction: row;
+           }
+           img{
+            height: 50px;
+            width: 50px;
+           }
         </style>
     </head>
     <body>
+        <div class="header">
+            <div class="header-right">
+                <div><img class="hamburger-menu" href="icons/hamburger-menu.svg"></div>
+                <div><img class="youtube-logo" href="icons/youtube-logo.svg"></div>
+            </div>
+            <div class="header-middle">
+                <div><input class="searchbar" type="text" placeholder="Search"></div>
+                <div><img class="search-icon" href="icons/search.svg"></div>
+                <div><img class="voice-search-icon" href="thumbnails/cheez-user.jpg"></div>
+            </div>
+            <div class="header-left">
+                <div><img class="upload-icon" href="icons/upload.svg"></div>
+                <div><img class="notifications" href="icons/notifications.svg"></div>
+                <div><img class="usermain" href="icons/usermain.jpg"></div>
+            </div>
+        </div>
         <div class="main-content-container">
             <div class="video-container">
                 <div class="thumbnail-container">
@@ -318,8 +338,6 @@
             </div>
             
         
-        </div>
-
-        
+        </div>   
     </body>
 </html>
