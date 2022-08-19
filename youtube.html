@@ -3,71 +3,9 @@
     <head>
         <title>YouTube</title>
         <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="maincontent.css">
         <style>
-            .main-content-container{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                column-gap: 20px;
-                row-gap: 20px;
-                margin: 20px;
-            }
             
-            .video-info-container{
-                margin-top: 11px;
-                display: flex;
-                flex-direction: row;
-                column-gap: 13px;
-            }
-            .creator-icon-container{
-                padding-left: 1px;
-            }
-            .creator-icon{
-                height: 36px;
-                width: 36px;
-                border-radius: 20px;
-            }
-            .video-thumb{
-                height: 167px;
-                width: 296px;
-                object-fit: cover;
-            }
-            .vid-text-container{
-                display: flex;
-                flex-direction: column;
-                row-gap: 5px;
-            }
-            .vid-name{
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 20px;
-                width: 220px;
-                
-            }
-            .creator-name-container{
-                display: flex;
-                flex-direction: row;
-                column-gap: 5px;
-                align-items: middle;
-            }
-            .creator-name{
-                font-size: 12px;
-                color: rgb(170,170,170);
-            }
-            .vid-stats{
-                font-size: 12px;
-                color: rgb(170,170,170);
-            }
-            .checkmark{
-                margin-top: 1px;
-                display: flex;
-                font-size: 9px;
-                color: black;
-                background-color: rgb(170,170,170);
-                border-radius: 20px;
-                width: 12px;
-                height: 12px;
-                justify-content: center;
-            }
         </style>
     </head>
     <body>
@@ -117,11 +55,208 @@
                     </div>
                 </div>
             </div>
-            <div class="video-container" style="background-color: grey;">v4</div>
-            <div class="video-container" style="background-color: blue;">v5</div>
-            <div class="video-container" >v6</div>
-            <div class="video-container" style="background-color: grey;">v7</div>
-            <div class="video-container">v8</div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/cheez.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/cheez-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>Animator Showcase: Yutaka Nakamura 中村 豊 AMV/MAD</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Cheezitos</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">4.3M views <strong>&#183;</strong> 1 years ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/honest.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/honest-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>Honest Trailers|Arcane</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Screen Junkies</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">1.4M views <strong>&#183;</strong> 6 months ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container" >
+                <img class="video-thumb" src="thumbnails/montage.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/montage-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>Something About Kirby Super Star ANIMATED (Loud Sound Warning)</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Terminal Montage</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">29M views <strong>&#183;</strong> 4 years ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/craft.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/craft-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>Coloring[Life-sized]Jotaro Kujo[JJBA]Make a 1$clay sculpture figure[Eng sub]</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Challenge Clay Craft</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">255k views <strong>&#183;</strong> 4 months ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/lofi.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/lofi-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>lofi hip hop radio-beats to relax/study to</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Lofi Girl</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">35k watching <strong>&#183;</strong> 2 years ago</div>
+                        <div>live</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/ww.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/ww-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>WW2 - OverSimplified (Part 1)</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">OverSimplified</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">74M views <strong>&#183;</strong> 4 years ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/kur.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/kur-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>The Deadliest Being on Planet Earth - The Bacteriophage</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Kurzgesagt - In a Nutshell</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">30M views <strong>&#183;</strong> 4 years ago</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/daole.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/daole-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>Mineko: Animation Process</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Dao Le</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">253k views <strong>&#183;</strong> 3 weeks ago</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/jehtt.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/jehtt-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>I don't have pronouns</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Jehtt</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">4.6M views <strong>&#183;</strong> 5months ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/voxx.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/voss-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>How "dementia villages" work</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Vox</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">341k views <strong>&#183;</strong> 23 hours  ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/voxx.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/voss-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>How "dementia villages" work</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Vox</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">341k views <strong>&#183;</strong> 23 hours  ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/voxx.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/voss-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>How "dementia villages" work</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Vox</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">341k views <strong>&#183;</strong> 23 hours  ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <img class="video-thumb" src="thumbnails/voxx.jpg">
+                <div class="video-info-container">
+                    <div class="creator-icon-container"><img class="creator-icon" src="thumbnails/voss-user.jpg"></div>
+                    <div class="vid-text-container">
+                        <div class="vid-name"><p>How "dementia villages" work</p></div>
+                        <div class="creator-name-container">
+                            <div class="creator-name">Vox</div>
+                            <div class="checkmark">&#10004;</div>
+                        </div>
+                        
+                        <div class="vid-stats">341k views <strong>&#183;</strong> 23 hours  ago</div>
+                    </div>
+                </div>
+            </div>
+
+            
+        
         </div>
 
         
