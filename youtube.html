@@ -7,18 +7,21 @@
         <style>
            .header{
             display: flex;
+            position: fixed;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             height: 50px;
             padding-top:5px;
-            padding-left: 10px;
+            z-index: 100;
+            
            }
            .header-right{
             display: flex;
             flex-direction: row;
             column-gap: 25px;
             align-items: center;
+            padding-left: 25px;
            }
            .header-middle{
             display: flex;
@@ -28,7 +31,8 @@
            .header-left{
             display: flex;
             flex-direction: row;
-            column-gap: 30px;
+            column-gap: 25px;
+            margin-right: 22px;
            }
            .hamburger-menu{
             height: 19px;
@@ -77,16 +81,17 @@
             width: 22px;
            }
            .upload{
-            height: 20px;
-            width: 20px;
+            height: 25px;
+            width: 25px;
            }
            .notification{
-            height: 20px;
-            width: 20px;
+            height: 22px;
+            width: 22px;
            }
            .usermain{
-            height: 20px;
-            width: 20px;
+            height: 32px;
+            width: 32px;
+            border-radius: 20px;
            }
 
         </style>

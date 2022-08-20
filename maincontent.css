@@ -1,4 +1,5 @@
 .main-content-container{
+    padding-top: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
