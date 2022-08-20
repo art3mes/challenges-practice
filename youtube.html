@@ -9,44 +9,107 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            z-index: 100;
+            align-items: center;
+            height: 50px;
+            padding-top:5px;
+            padding-left: 10px;
            }
            .header-right{
             display: flex;
             flex-direction: row;
+            column-gap: 25px;
+            align-items: center;
            }
            .header-middle{
             display: flex;
             flex-direction: row;
+            
            }
            .header-left{
             display: flex;
             flex-direction: row;
+            column-gap: 30px;
            }
-           img{
-            height: 50px;
-            width: 50px;
+           .hamburger-menu{
+            height: 19px;
+            width: 19px;
+            cursor: pointer;
            }
+           .youtube-logo{
+            height: 22px;
+            width: 95px;
+            cursor: pointer;
+           }
+           .searchbar{
+            background-color: black;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 2px;
+            border-color: rgb(51, 51, 51);
+            height: 37px;
+            width: 530px;
+            padding-left: 8px;
+            font-size: 15px;
+            color: white;
+           }
+           .search-icon-button{
+            background-color:rgb(51, 51, 51);
+            height:40px ;
+            width: 65px;
+            border: none;
+            margin-right: 13px;
+           }
+           .search-icon{
+            padding-top:3px;
+            height: 25px;
+            width: 25px;
+           }
+           .voice-search-button{
+            background-color: black;
+            border-radius: 20px;
+            padding-top: 6px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 3px;
+           }
+           .voice-search{
+            height: 23px;
+            width: 22px;
+           }
+           .upload{
+            height: 20px;
+            width: 20px;
+           }
+           .notification{
+            height: 20px;
+            width: 20px;
+           }
+           .usermain{
+            height: 20px;
+            width: 20px;
+           }
+
         </style>
     </head>
     <body>
         <div class="header">
             <div class="header-right">
-                <div><img class="hamburger-menu" href="icons/hamburger-menu.svg"></div>
-                <div><img class="youtube-logo" href="icons/youtube-logo.svg"></div>
+                <div><img class="hamburger-menu" src="icons/hamburger-menu.png"></div>
+                <div><img class="youtube-logo" src="icons/youtube-logo.png"></div>
             </div>
             <div class="header-middle">
                 <div><input class="searchbar" type="text" placeholder="Search"></div>
-                <div><img class="search-icon" href="icons/search.svg"></div>
-                <div><img class="voice-search-icon" href="thumbnails/cheez-user.jpg"></div>
+                <div><button class="search-icon-button"><img class="search-icon" src="icons/search.png"></button></div>
+                <div><button class="voice-search-button"><img class="voice-search" src="icons/voice-search.png"></button></div> 
             </div>
             <div class="header-left">
-                <div><img class="upload-icon" href="icons/upload.svg"></div>
-                <div><img class="notifications" href="icons/notifications.svg"></div>
-                <div><img class="usermain" href="icons/usermain.jpg"></div>
+                <div><img class="upload" src="icons/upload.png"></div>
+                <div><img class="notification" src="icons/notification.png"></div>
+                <div><img class="usermain" src="icons/usermain.jpg"></div>
             </div>
         </div>
         <div class="main-content-container">
+
             <div class="video-container">
                 <div class="thumbnail-container">
                     <img class="video-thumb" src="thumbnails/linus.jpg">
