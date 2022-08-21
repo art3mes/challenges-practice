@@ -11,13 +11,15 @@
                 display: flex;
                 flex-direction: column;
                 position: fixed;
-                top: 73px;
+                overflow-y: scroll;
+                top: 57px;
                 bottom: 0;
-                left: 25px;
+                padding-top: 20px;
                 row-gap: 20px;
-                width: 220px;
+                width: 255px;
                 border-color: white;
-
+                z-index: 100;
+                background-color: rgb(33, 33, 33);
             }
             .sidebar p{
                 font-size: 15px;
@@ -27,20 +29,74 @@
                 display: flex;
                 flex-direction: row;
                 column-gap: 29px;
+                padding-left: 26px;
                 align-items: center;
+                height: 40px;
+            }
+            .sidebar-row:hover{
+                cursor: pointer;
+                background-color: rgb(51, 51, 51);
             }
             .sidebar-image{
                 height: 22px;
                 width: 22px;
 
             }
-            .sb{
+            .sidebar-sb3-image{
+                height: 25px;
+                width: 25px;
+                border-radius: 20px;
+            }
+            .sidebar-sb5-image{
+                height: 23px;
+                width: 25px;
+            }
+            .sb1,.sb2,.sb3,.sb4,.sb5,.sb6{
                 display: flex;
                 flex-direction: column;
-                row-gap: 17px;
-                padding-bottom: 15px;
+                margin-top: -9px;
+                padding-bottom: 12px;
                 border-bottom-style: solid;
-                padding-left: 0px;
+                border-color: rgb(51, 51, 51);
+                border-width: 1px;
+            }
+            .sb7{
+                display: flex;
+                flex-direction: column;
+                margin-top: -9px;
+                row-gap: 13px;
+                padding-left: 28px;
+                padding-top: 8px;
+                padding-bottom: 20px;
+            }
+            .sb7 p{
+                font-size: 14px;
+                color: #AAAAAA;
+            }
+            .sb7-r-main{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3px;
+            }
+            .sb7-r{
+                display: flex;
+                flex-direction: row;
+                column-gap: 9px;
+            }
+            .sb7-last-row {
+                font-size:12px;
+                color: #7a7a7a;
+            }
+            .sidebar-row-heading{
+                font-size: 14px;
+                font-weight: bold;
+                color:#AAAAAA;
+                padding-left: 28px;
+                padding-top: 8px;
+                padding-bottom: 12px;
+            }
+            .sb7 p:hover{
+                cursor: pointer;
             }
         </style>
     </head>
@@ -80,7 +136,8 @@
             </div>
         </div>
         <div class="sidebar">
-            <div class="sb">
+            
+            <div class="sb1">
                 <div class="sidebar-row">
                     <div><img class="sidebar-image" src="icons/home.png"></div>
                     <div><p>Home</p></div>
@@ -98,7 +155,7 @@
                     <div><p>Subscriptions</p></div>
                 </div>
             </div>
-            <div class="sb">
+            <div class="sb2">
                 <div class="sidebar-row">
                     <div><img class="sidebar-image" src="icons/library.png"></div>
                     <div><p>Library</p></div>
@@ -126,46 +183,143 @@
 
             </div>
             <div class="sb3">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="sidebar-row-heading">SUBSCRIPTIONS</div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-jack.jpg"></div>
+                    <div><p>jacksepticeye</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-pewd.jpg"></div>
+                    <div><p>PewDiePie</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-fireship.jpg"></div>
+                    <div><p>Fireship</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-kur.jpg"></div>
+                    <div><p>Kurzgesagt - In a Nutshell</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-neyt.jpg"></div>
+                    <div><p>Neytirix</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-up.jpg"></div>
+                    <div><p>Up and Atom</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb3-image" src="icons/sidebar-terminal.jpg"></div>
+                    <div><p>TerminalMontage</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/down-arrow.png"></div>
+                    <div><p>Show 3 more</p></div>
+                </div>
 
             </div>
             <div class="sb4">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="sidebar-row-heading">EXPLORE</div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/movies.png"></div>
+                    <div><p>Movies</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/gaming.png"></div>
+                    <div><p>Gaming</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/live.png"></div>
+                    <div><p>Live</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/fashion.png"></div>
+                    <div><p>Fashion & Beauty</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/learning.png"></div>
+                    <div><p>Learning</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/sports.png"></div>
+                    <div><p>Sports</p></div>
+                </div>
+
             </div>
             <div class="sb5">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="sidebar-row-heading">MORE FROM YOUTUBE</div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb5-image" src="icons/youtube.png"></div>
+                    <div><p>Youtube Premium</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb5-image" style="border-radius: 20px;"  src="icons/studio.png"></div>
+                    <div><p>Creator Studio</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb5-image" style="border-radius: 20px;" src="icons/music.png"></div>
+                    <div><p>Youtube Music</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb5-image" style="border-radius: 3px;" src="icons/kids.png"></div>
+                    <div><p>Youtube Kids</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-sb5-image" src="icons/tv.png"></div>
+                    <div><p>Youtube TV</p></div>
+                </div>
                 
             </div>
             <div class="sb6">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/setting.png"></div>
+                    <div><p>Settings</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/report.png"></div>
+                    <div><p>Report History</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/help.png"></div>
+                    <div><p>Help</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/feedback.png"></div>
+                    <div><p>Send feedback</p></div>
+                </div>
                 
                 
             </div>
             <div class="sb7">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="sb7-r-main">
+                    <div class="sb7-r">
+                        <div><p>About</p></div>
+                        <div><p>Press</p></div>
+                        <div><p>Copyright</p></div>
+                    </div>
+                    <div class="sb7-r">
+                        <div><p>Contact us</p></div>
+                        <div><p>Creators</p></div>
+                    </div>
+                    <div class="sb7-r">
+                        <div><p>Advertise</p></div>
+                        <div><p>Developers</p></div>
+                    </div>
+                </div>
+                <div class="sb7-r-main">
+                    <div class="sb7-r">
+                        <div><p>Terms</p></div>
+                        <div><p>Privacy</p></div>
+                        <div><p>Policy & Safety</p></div>
+                    </div>
+                    <div class="sb7-r">
+                        <div><p>How YouTube works</p></div>
+                    </div>
+                    <div class="sb7-r">
+                        <div><p>Test new features</p></div>
+                    </div>
+                </div>
+                <div class="sb7-last-row" >© 2022 Google LLC</div>
             </div>
 
         </div>
