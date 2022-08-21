@@ -5,36 +5,43 @@
         <link rel="stylesheet" href="general.css">
         <link rel="stylesheet" href="maincontent.css">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="subheader.css">
         <style>
-            .subheader{
-                position: fixed;
-                top: 57px;
-                right: 0;
-                left: 270px;
+            .sidebar{
                 display: flex;
-                flex-direction: row;
-                column-gap: 12px;
-                background-color: rgb(33, 33, 33);
-                border-bottom-style: solid;
-                border-color: rgb(79, 79, 79);
-                border-width: 1px;
-                padding-top: 11px;
-                padding-bottom:11px;
-                z-index: 99;
+                flex-direction: column;
+                position: fixed;
+                top: 73px;
+                bottom: 0;
+                left: 25px;
+                row-gap: 20px;
+                width: 220px;
+                border-color: white;
+
+            }
+            .sidebar p{
+                font-size: 15px;
                 
             }
-            .subheader-button{
-                font-size: 14px;
-                font-weight: bold;
-                color: white;
-                background-color: rgb(51, 51, 51);
-                border-style: solid;
-                border-color: rgb(61, 61, 61);
-                border-width: 1px;
-                border-radius: 20px;
-                padding: 6px 13px 6px 13px;
+            .sidebar-row{
+                display: flex;
+                flex-direction: row;
+                column-gap: 29px;
+                align-items: center;
             }
-           
+            .sidebar-image{
+                height: 22px;
+                width: 22px;
+
+            }
+            .sb{
+                display: flex;
+                flex-direction: column;
+                row-gap: 17px;
+                padding-bottom: 15px;
+                border-bottom-style: solid;
+                padding-left: 0px;
+            }
         </style>
     </head>
     <body>
@@ -72,7 +79,96 @@
     
             </div>
         </div>
-        
+        <div class="sidebar">
+            <div class="sb">
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/home.png"></div>
+                    <div><p>Home</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/explore.png"></div>
+                    <div><p>Explore</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div ><img class="sidebar-image" style="height: 26px; width:26px; margin:-5px -1px -5px -3px;" src="icons/shorts.png"></div>
+                    <div><p>Shorts</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/subscriptions.png"></div>
+                    <div><p>Subscriptions</p></div>
+                </div>
+            </div>
+            <div class="sb">
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/library.png"></div>
+                    <div><p>Library</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/history.png"></div>
+                    <div><p>History</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/videos.png"></div>
+                    <div><p>Your Vidoes</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/watch-later.png"></div>
+                    <div><p>Watch Later</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/clips.png"></div>
+                    <div><p>Your Clips</p></div>
+                </div>
+                <div class="sidebar-row">
+                    <div><img class="sidebar-image" src="icons/down-arrow.png"></div>
+                    <div><p>Show more</p></div>
+                </div>
+
+            </div>
+            <div class="sb3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+            <div class="sb4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="sb5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                
+            </div>
+            <div class="sb6">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                
+                
+            </div>
+            <div class="sb7">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
         <div class="main-content-container">
 
             <div class="video-container">
@@ -131,7 +227,7 @@
             </div>
             <div class="video-container">
                 <div class="thumbnail-container">
-                    <img class="video-thumb" src="thumbnails/voxx.jpg">
+                    <img class="video-thumb" src="thumbnails/cheez.jpg">
                     <div class="video-duration"><p>3:31</p></div>
                 </div>
                 <div class="video-info-container">
