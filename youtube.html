@@ -6,116 +6,8 @@
         <link rel="stylesheet" href="maincontent.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="subheader.css">
-        <style>
-            .sidebar{
-                display: flex;
-                flex-direction: column;
-                position: fixed;
-                overflow-y: scroll;
-                top: 57px;
-                bottom: 0;
-                padding-top: 20px;
-                row-gap: 20px;
-                width: 255px;
-                border-color: white;
-                z-index: 100;
-                background-color: rgb(33, 33, 33);
-                overflow: auto;
-            }
-            .sidebar::-webkit-scrollbar {
-                width: 10px;
-            }
-             
-            .sidebar::-webkit-scrollbar-thumb {
-                visibility: hidden;
-                border-radius: 10px;
-                background: rgb(111, 111, 111); 
-                
-               
-            }
-            .sidebar:hover::-webkit-scrollbar-thumb {
-                visibility:visible;
-            }
-            
-
-            .sidebar p{
-                font-size: 15px;
-                
-            }
-            .sidebar-row{
-                display: flex;
-                flex-direction: row;
-                column-gap: 29px;
-                padding-left: 26px;
-                align-items: center;
-                height: 40px;
-            }
-            .sidebar-row:hover{
-                cursor: pointer;
-                background-color: rgb(51, 51, 51);
-            }
-            .sidebar-image{
-                height: 22px;
-                width: 22px;
-
-            }
-            .sidebar-sb3-image{
-                height: 25px;
-                width: 25px;
-                border-radius: 20px;
-            }
-            .sidebar-sb5-image{
-                height: 23px;
-                width: 25px;
-            }
-            .sb1,.sb2,.sb3,.sb4,.sb5,.sb6{
-                display: flex;
-                flex-direction: column;
-                margin-top: -9px;
-                padding-bottom: 12px;
-                border-bottom-style: solid;
-                border-color: rgb(51, 51, 51);
-                border-width: 1px;
-            }
-            .sb7{
-                display: flex;
-                flex-direction: column;
-                margin-top: -9px;
-                row-gap: 13px;
-                padding-left: 28px;
-                padding-top: 8px;
-                padding-bottom: 20px;
-            }
-            .sb7 p{
-                font-size: 14px;
-                color: #AAAAAA;
-            }
-            .sb7-r-main{
-                display: flex;
-                flex-direction: column;
-                row-gap: 3px;
-            }
-            .sb7-r{
-                display: flex;
-                flex-direction: row;
-                column-gap: 9px;
-            }
-            .sb7-last-row {
-                font-size:12px;
-                color: #7a7a7a;
-            }
-            .sidebar-row-heading{
-                font-size: 14px;
-                font-weight: bold;
-                color:#AAAAAA;
-                padding-left: 28px;
-                padding-top: 8px;
-                padding-bottom: 12px;
-            }
-            .sb7 p:hover{
-                cursor: pointer;
-            }
-            
+        <link rel="stylesheet" href="sidebar.css">
+        <style> 
             
         </style>
     </head>
@@ -157,7 +49,7 @@
         <div class="sidebar">
             
             <div class="sb1">
-                <div class="sidebar-row">
+                <div class="sidebar-row" style="background-color: rgb(51, 51, 51);">
                     <div><img class="sidebar-image" src="icons/home.png"></div>
                     <div><p>Home</p></div>
                 </div>
