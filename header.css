@@ -66,6 +66,9 @@
     font-size: 15px;
     color: white;
    }
+   .searchbar:focus{
+    outline: none;
+   }
    .searchbar::placeholder{
     font-size: 16px;
    }
@@ -101,11 +104,25 @@
     width: 25px;
     padding-top: 3px;
    }
+   .header-left-notification-container{
+    position: relative;
+   }
+   .notification-count{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+
+    font-size: 10px;
+    background-color: red;
+    padding: 2px 4px 2px 4px;
+    border-radius: 20px;
+   }
    .notification{
     height: 22px;
     width: 22px;
     padding-top: 5px;
    }
+
    .usermain{
     height: 32px;
     width: 32px;
