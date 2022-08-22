@@ -45,6 +45,26 @@
     cursor: pointer;
     background-color: rgb(51, 51, 51);
 }
+.sidebar-row p{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.online-status{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.online{
+    color: rgb(114, 255, 255);
+    font-weight: bold;
+}
 .sidebar-image{
     height: 22px;
     width: 22px;
