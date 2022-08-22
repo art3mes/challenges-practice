@@ -19,7 +19,7 @@
 }
 .subheader-button{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
     color: white;
     background-color: rgb(51, 51, 51);
     border-style: solid;
@@ -27,11 +27,16 @@
     border-width: 1px;
     border-radius: 20px;
     padding: 6px 13px 6px 13px;
+   
+    
 }
 .subheader-button:hover{
     cursor: pointer;
 }
 .subheader p{
+    
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
+    
+    white-space: nowrap;
 }
