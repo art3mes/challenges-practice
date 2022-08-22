@@ -8,6 +8,9 @@
     
     
 }
+.video-container img, .video-container p,.creator-name{
+    cursor: pointer;
+}
 
 .video-info-container{
     margin-top: 11px;
@@ -91,4 +94,28 @@
     padding: 2px 3px 1px 5px;
     
     border-radius: 3px;   
+}
+
+.live-div{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: center;
+    column-gap: 3px;
+    background-color: rgb(195, 0, 0);
+    width: 45px;
+    padding-left: 6px;
+    border-radius: 2px;
+    
+}
+.live-div img{
+    width: 13px;
+    height: 13px;
+    
+}
+.live-div p{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: -2px;
+    margin-bottom: -3px;
 }

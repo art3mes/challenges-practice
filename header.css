@@ -31,11 +31,15 @@
     padding-left: 25px;
     padding-top: 10px;
    }
+   .header-right img{
+    cursor: pointer;
+   }
    .header-middle{
     display: flex;
     flex-direction: row;
-    
-    
+   }
+   .header-middle button{
+    cursor: pointer;
    }
    .header-left{
     display: flex;
@@ -43,6 +47,9 @@
     column-gap: 25px;
     margin-right: 24px;
     padding-top: 10px;
+   }
+   .header-left img{
+    cursor: pointer;
    }
    .hamburger-menu{
     height: 19px;

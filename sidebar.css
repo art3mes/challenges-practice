@@ -64,6 +64,7 @@
 .online{
     color: rgb(114, 255, 255);
     font-weight: bold;
+    padding-right: 6px;
 }
 .sidebar-image{
     height: 22px;
