@@ -16,22 +16,16 @@
 .sidebar::-webkit-scrollbar {
     width: 10px;
 }
- 
 .sidebar::-webkit-scrollbar-thumb {
     visibility: hidden;
     border-radius: 10px;
     background: rgb(111, 111, 111); 
-    
-   
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
     visibility:visible;
 }
-
-
 .sidebar p{
-    font-size: 15px;
-    
+    font-size: 15px;  
 }
 .sidebar-row{
     display: flex;
