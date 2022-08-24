@@ -1,6 +1,5 @@
 body{
     padding-bottom: 1000px;
-    
     font-family:  Roboto, Arial;
     margin: 0;
     color: white;
@@ -12,14 +11,9 @@ p{
     padding: 0;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    
+    width: 10px;  
 }
- 
-::-webkit-scrollbar-thumb {
-    
+::-webkit-scrollbar-thumb {  
     border-radius: 10px;
-    background: rgb(111, 111, 111); 
-    
-   
+    background: rgb(111, 111, 111);  
 }
