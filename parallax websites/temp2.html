@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NO</title>
+    </head>
+    <style>
+        body{
+            margin: 0;
+            background-color:black;
+        }
+        .title{
+            font-size: 120px;
+            text-shadow: 0 0 5px black;
+            color: white;
+        }
+        section{
+            font-size: 50px;
+            padding: 50px;
+            background-color: black;
+            color: white;
+        }
+        .wrapper{
+            height:100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            perspective: 10px;
+        }
+        header{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+        .background{
+            margin-top: -500px;
+        }
+        .background,.foreground{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .background{
+            transform: translateZ(-10px) scale(2);
+        }
+
+
+    </style>
+    <body>
+        <div class="wrapper"> 
+            <header>
+                <img class="background" src="images/mountains_behind.png">
+                <img class="foreground" src="images/mountains_front.png">
+                <h1 class="title">Weclome !</h1>
+            </header>
+        </div>
+        <section>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum voluptatem aspernatur voluptatibus quisquam rem expedita accusantium iure cumque id, nostrum praesentium voluptate labore, explicabo quia consequatur totam. Nobis ullam earum qui officia, voluptatem nihil corporis inventore ducimus eos cupiditate quaerat, facere quos voluptates quidem, dolorem eveniet sapiente dolor perferendis veritatis porro odit quibusdam impedit laboriosam. Porro molestiae recusandae similique quod ducimus doloremque fugit non veritatis inventore consequuntur sapiente tenetur sed velit odio sint, illum minus temporibus atque? Expedita hic enim reprehenderit aliquid amet, beatae ab aperiam rem eos maxime tenetur explicabo molestiae in id non magnam ipsa doloremque deserunt ad? Totam perspiciatis sequi enim tempora vero. Tempore eius possimus eum magni porro placeat, amet quae ex, consectetur tenetur velit et aliquam rem impedit molestias numquam, modi nihil tempora. Cupiditate iusto corporis earum tempore laborum ullam corrupti, delectus est deleniti fugiat laudantium eius provident, quia rem blanditiis, molestiae inventore sequi? Quaerat, eaque. Eos, omnis. Consequatur ad deserunt optio obcaecati quia natus eveniet provident, facere vel. Ullam, repellat commodi cupiditate culpa unde temporibus veritatis necessitatibus illo accusantium dolore. Cupiditate rem recusandae quibusdam cumque saepe, expedita excepturi veritatis sapiente corporis, ea ullam rerum assumenda at sint neque distinctio quaerat aspernatur nisi provident earum impedit laudantium? Saepe, illum odit molestias voluptatem commodi maiores ab optio beatae placeat ullam veritatis deleniti quo sunt ipsa amet fuga. Impedit sunt alias praesentium nobis reiciendis unde sequi rerum neque quae quisquam nam non consectetur veritatis quam, voluptatum distinctio optio, eius similique libero quia maiores aliquam ea! Sed, pariatur delectus reiciendis ullam ad est et quos dolores dolore ratione quaerat totam mollitia doloribus ex consequatur fugit? Quam quidem suscipit aspernatur rerum assumenda adipisci voluptatem quos ex laboriosam minima? Consectetur quod eum vel. Ut, laboriosam temporibus iusto unde ducimus dolore placeat, dolorum, ullam accusantium assumenda fugit hic id magnam sapiente.
+        </section>
+    </body>
+</html>
