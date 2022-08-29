@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Para;;ax 
+        </title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .background{
+                width: 100%;
+            }
+            .main{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                overflow-x: hidden;
+                perspective: 10px;
+                transform-style:preserve-3d ;
+            }
+            .background{
+                position: relative;
+            }
+            .cat{
+                position: absolute;
+                
+                left: 25%;
+
+            }
+            .background{
+                transform: translateZ(-10px) scale(2);
+            }
+            .cat{
+                transform: translateZ(-5px) scale(1.5);
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="main">
+            <img class="background" src="images/land.png">
+            <img class="cat" src="images/cat.gif">
+        </div>
+        
+    </body>
+</html>
