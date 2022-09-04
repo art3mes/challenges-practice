@@ -10,22 +10,81 @@
                 font-size: 4em;
                 color: white;
             }
-            /*align*/
+            
             .wrapper{
                 height: 100vh;
                 overflow-x: hidden;
                 overflow-y: auto;
+                perspective: 300px;
             }
+            .group_intro{
+                height: 100vh;
+                background-color: tomato;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .group_outro{
+                height: 100vh;
+                background-color: teal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .group{
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
+            }
+             .layer{
+                position: absolute;
+                inset: 0;   /*top bottom left right = 0*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+             }
+             .base{       /* scale calculation 1+ ((Z transfrom value*-1)/perspective)*/
+                transform: translateZ(-300px) scale(2);
+             }
+
+             .mid{
+                transform: translateZ(0);
+             }
+             .top{
+                transform: translateZ(210px) scale(0.3);
+             }
+
+             #intro{
+                z-index: 0;
+             }
+
+             #group-1{
+                z-index: -1;
+             }
+
+             #group-1 > .base{
+                background-color: crimson;
+             }
+
+             #group-2{}
+
+             #group-2 > .mid{
+                background-color: hotpink;
+             }
+
+             #outro{}
 
         </style>
     </head>
     <body>
         <div class="wrapper">
-            <div class="group_intro">
-                Bro help me. this is the last time im doing this hit
+            <div class="group_intro" id="intro">
+               Bro help me. this is the last time im doing this hit
             </div>
 
-            <div class="group">
+            <div class="group" id="group-1">
                 <div class="layer base">
                     Based Layer page
                 </div>
@@ -34,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="group">
+            <div class="group" id="group-2">
                 <div class="layer mid">
                     mid layer page
                 </div>
@@ -43,8 +102,8 @@
                 </div>
             </div>
 
-            <div class="group_outro">
-                
+            <div class="group_outro" id="outro">
+                OK
             </div>
              
         </div>
