@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Para;;ax 
-        </title>
+        <title>Tits</title>
         <style>
             body{
                 margin: 0;
                 padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 4em;
+                color: white;
             }
-            .background{
-                width: 100%;
-            }
-            .main{
-                display: flex;
-                flex-direction: column;
-                position: relative;
+            
+            .wrapper{
+                height: 100vh;
                 overflow-x: hidden;
                 overflow-y: auto;
-                perspective: 10px;
-                transform-style:preserve-3d ;
+                perspective: 300px;
             }
-            .background{
-                position: relative;
+            .group_intro{
+                height: 100vh;
+                background-color: tomato;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            .cat{
-                position: absolute;
-                
-                left: 25%;
+            .group_outro{
+                height: 100vh;
+                background-color: teal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
+            .group{
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
             }
-            .background{
-                transform: translateZ(-10px) scale(2);
-            }
-            .cat{
-                transform: translateZ(-5px) scale(1.5);
-            }
+             .layer{
+                position: absolute;
+                inset: 0;   /*top bottom left right = 0*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+             }
+             .base{       /* scale calculation 1+ ((Z transfrom value*-1)/perspective)*/
+                transform: translateZ(-300px) scale(2);
+             }
+
+             .mid{
+                transform: translateZ(0);
+             }
+             .top{
+                transform: translateZ(210px) scale(0.3);
+             }
+
+             #intro{
+                z-index: 0;
+             }
+
+             #group-1{
+                z-index: -1;
+             }
+
+             #group-1 > .base{
+                background-color: crimson;
+             }
+
+             #group-2{}
+
+             #group-2 > .mid{
+                background-color: hotpink;
+             }
+
+             #outro{}
 
         </style>
-
     </head>
     <body>
-        <div class="main">
-            <img class="background" src="images/land.png">
-            <img class="cat" src="images/cat.gif">
+        <div class="wrapper">
+            <div class="group_intro" id="intro">
+               Bro help me. this is the last time im doing this hit
+            </div>
+
+            <div class="group" id="group-1">
+                <div class="layer base" style="background-color: green;">
+                    Based Layer page
+                </div>
+                <div class="layer mid" >
+                    Mid layer page
+                </div>
+            </div>
+
+            <div class="group" id="group-2">
+                <div class="layer mid">
+                    mid layer page
+                </div>
+                <div class="layer top" >
+                  top layer page  
+                </div>
+            </div>
+
+            <div class="group_outro" id="outro">
+                OK
+            </div>
+             
         </div>
-        
     </body>
 </html>
