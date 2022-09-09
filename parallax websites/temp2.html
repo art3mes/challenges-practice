@@ -10,16 +10,25 @@
             }
             .topbar{
                 display: flex;
+                flex-direction: row;
+                column-gap: 5px;
                 position: fixed;
                 inset: 0;
-                
+                justify-content: center;
+                padding: 5px 0 5px 0;;
                 width: 100%;
                 height: 3em;
                 background-color: aquamarine;
             }
+            .topbar img{
+                object-fit: cover;
+                width: 50px;
+                border-radius: 50px;
+            }
             .main{
                 width: 100%;
                 margin-top: 48px;
+                
             }
             .art{
                 width: 100%;
@@ -28,7 +37,19 @@
         </style>
     </head>
     <body>
-        <div class="topbar">top bar</div>
+        <div class="topbar">
+            <img src="images/liver.png">
+            
+            <img src="images/liver2.png">
+            <img src="images/liver3.png">
+            <img src="images/liver4.png">
+            <img src="images/liver5.png">
+            <img src="images/liver6.png">
+            <img src="images/liver7.png">
+            <img src="images/liver8.png">
+            <img src="images/liver9.png">
+
+        </div>
         <div class="main">
             <img class="art" src="images/art.jpg">
             <img class="art" src="images/art.jpg">
