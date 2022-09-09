@@ -35,6 +35,27 @@
             .art{
                 width: 100%;
             }
+            .group{
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
+            }
+            .layer{
+                position: absolute;
+
+                inset: 0;   /*top bottom left right = 0*/
+                left: -7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+             }
+             .mid1 p{
+                color: blue;
+                margin-right: -5em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 4em;
+             }
 
         </style>
     </head>
@@ -55,6 +76,14 @@
         <div class="main">
             <img class="art" src="images/art.jpg">
             <img class="art" src="images/art.jpg">
+        </div>
+        <div class="group" id="group-1">
+            <div class="layer base" >
+                <img src="images/cat.gif">
+            </div>
+            <div class="layer mid1" >
+                <p>a floating <br> cat</p>
+            </div>
         </div>
     </body>
 </html>
