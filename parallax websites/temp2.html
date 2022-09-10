@@ -7,6 +7,7 @@
                 padding: 0;
                 margin: 0;
                 padding-bottom: 4000px;
+                overflow-y: hidden;
             }
             .topbar{
                 display: flex;
@@ -34,9 +35,7 @@
             
                 
             }
-            .art{
-                width: 100%;
-            }
+            
 
             .wrapper{
                 height: 100vh;
@@ -46,14 +45,14 @@
             }
             .group_intro{
                 height: 100vh;
-                background-color: tomato;
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .group_outro{
                 height: 100vh;
-                background-color: teal;
+                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -103,27 +102,35 @@
                 background-color: black;
              }
              .top img{
-                margin-left: -5em;
-                width: 25em;
+                margin-left: 30%;
+                width: 35em;
              }
 
              .base img{
-                width: 6em;
+                width: 10em;
                 margin-left: -5em;
              }
              .mid1 p{
-                color: bisque;
+                color: violet;
                 margin-right: -5em;
+                font-size: 4em;
                 
              }
              .mid2 p{
-                
+                color: white;
                 margin-right: -5em;
+                font-size: 5em;
              }
              .moun{
                 width: 100%;
 
              }
+             .group_intro img, .group_outro img, .mid2 img{
+                object-fit: cover;
+                height: 100vh;
+                width: 100%;
+             }
+             
         </style>
     </head>
     <body>
@@ -138,12 +145,17 @@
             <img src="images/liver7.png">
             <img src="images/liver8.png">
             <img src="images/liver9.png">
+            <img src="images/liver10.png">
+            <img src="images/liver11.png">
+            <img src="images/liver12.png">
+            <img src="images/liver13.png">
+
 
         </div>
         
         <div class="wrapper">
             <div class="group_intro" id="intro">
-               Bro help me. this is the last time im doing this hit
+               <img src="images/liver10.png">
             </div>
 
             <div class="group" id="group-1">
@@ -151,13 +163,14 @@
                     <img src="images/cat.gif">
                 </div>
                 <div class="layer mid1" >
-                    <p>a floating <br> cat</p>
+                    <p>CAT</p>
                 </div>
             </div>
 
             <div class="group" id="group-2">
                 <div class="layer mid2">
                     <p>THE <br>MOON</p>
+                    <img src="images/stars.png" >
                 </div>
                 <div class="layer top" >
                     <img src="images/moonn.png">
@@ -166,7 +179,8 @@
             
 
             <div class="group_outro" id="outro">
-                OK
+              <img src="images/stars.png" style="position: relative;">
+              <img src="images/mountains_front.png" style="position: absolute;">
             </div>
              
         </div>
