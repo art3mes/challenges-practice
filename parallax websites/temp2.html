@@ -39,17 +39,32 @@
             }
 
             .wrapper{
-                height: 1vh;
+                height: 100vh;
                 overflow-x: hidden;
                 overflow-y: auto;
                 perspective: 300px;
             }
+            .group_intro{
+                height: 100vh;
+                background-color: tomato;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .group_outro{
+                height: 100vh;
+                background-color: teal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             .group{
                 position: relative;
                 height: 100vh;
                 transform-style: preserve-3d;
             }
-            .layer{
+             .layer{
                 position: absolute;
 
                 inset: 0;   /*top bottom left right = 0*/
@@ -59,20 +74,56 @@
                 align-items: center;
 
              }
-             .mid1 p{
-                color: blue;
-                margin-right: -5em;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 4em;
-             }
-             .base img{
-                width: 6em;
-                margin-left: -5em;
-             }
              .base{       /* scale calculation 1+ ((Z transfrom value*-1)/perspective)*/
                 transform: translateZ(-300px) scale(2);
              }
 
+             .mid{
+                transform: translateZ(0);
+             }
+             .top{
+                transform: translateZ(100px) scale(0.67);
+             }
+
+             #intro{
+                z-index: 0;
+             }
+
+             #group-1{
+                z-index: -1;
+             }
+
+             #group-1 > .base{
+                background-color: black
+             }
+
+             
+
+             #group-2 > .mid2, #group-3 > .mid2{
+                background-color: black;
+             }
+             .top img{
+                margin-left: -5em;
+                width: 25em;
+             }
+
+             .base img{
+                width: 6em;
+                margin-left: -5em;
+             }
+             .mid1 p{
+                color: bisque;
+                margin-right: -5em;
+                
+             }
+             .mid2 p{
+                
+                margin-right: -5em;
+             }
+             .moun{
+                width: 100%;
+
+             }
         </style>
     </head>
     <body>
@@ -89,11 +140,12 @@
             <img src="images/liver9.png">
 
         </div>
-        <div class="main">
-            <img class="art" src="images/art.jpg">
-            <img class="art" src="images/art.jpg">
-        </div>
-        <div class="wrapper"></div>
+        
+        <div class="wrapper">
+            <div class="group_intro" id="intro">
+               Bro help me. this is the last time im doing this hit
+            </div>
+
             <div class="group" id="group-1">
                 <div class="layer base" >
                     <img src="images/cat.gif">
@@ -101,7 +153,22 @@
                 <div class="layer mid1" >
                     <p>a floating <br> cat</p>
                 </div>
-        </div>   
+            </div>
+
+            <div class="group" id="group-2">
+                <div class="layer mid2">
+                    <p>THE <br>MOON</p>
+                </div>
+                <div class="layer top" >
+                    <img src="images/moonn.png">
+                </div>
+            </div>
+            
+
+            <div class="group_outro" id="outro">
+                OK
+            </div>
+             
         </div>
     </body>
 </html>
