@@ -16,6 +16,7 @@
                 justify-content: center;
             }
             .top_r1{
+                padding: 5px 0 5px 0;
                 background-color: skyblue;
                 display: flex;
                 flex-direction: row;
@@ -26,7 +27,8 @@
             .top_r1_right{
                 display: flex;
                 flex-direction: row;
-                column-gap: 20px;
+                column-gap: 15px;
+                align-items: center;
             }
             .logo{
                 font-size: 30px;
@@ -44,6 +46,30 @@
                 height: 26px;
 
             }
+           .icocon{
+                
+                width: 35px;
+                height: 30px;
+                display: flex;
+                margin-right: -5px;
+                align-items: center;
+                border-width: 1px;
+                border-color: rgb(202, 199, 199);
+                border-right-style: solid;
+            }
+            
+            .icon{
+                width: 25px;
+            }
+            .userbut{
+                width: 10ox;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .userbut img{
+                width: 10px;
+                padding-top: 5px;
+            }
         </style>
     </head>
     <body>
@@ -53,10 +79,10 @@
                 <div class="logo">MyAnimeList</div>
                 <div class="top_r1_right">
                     <div ><button class="hideads">Hide Ads</button></div>
-                    <div class="icon">burger</div>
-                    <div class="icon">message</div>
-                    <div class="icon">noti</div>
-                    <div class="username">username</div>
+                    <div class="icocon" ><img  class="icon" src="thumbs/hamburger.png"></div>
+                    <div class="icocon"><img class="icon" src="thumbs/mes.png" ></div>
+                    <div class="icocon"><img class="icon" src="thumbs/bel.png"></div>
+                    <div class="user_con"><button class="userbut">art3mes <img src="thumbs/down-arrow.png"></button></div>
                     <div class="userthumb">userpic</div>
                 </div>
             </div>
