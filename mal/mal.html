@@ -93,9 +93,10 @@
                 flex-direction: row;
                 width:1060px ;
                 position: relative;
+                background-color: #1c439b;
             }
             .top_r2_left,.top_r2_right{
-                border-style: solid;
+                
                 display: flex;
                 align-items: center;
             }
@@ -110,7 +111,7 @@
             .text{
                 font-size: 14px;
                 font-weight: 700;
-                background-color: paleturquoise;
+                color: white;
                 height: 34px;
                 width: auto;
                 display: flex;
@@ -144,25 +145,38 @@
                 background-color:skyblue;
                 padding-right: 5px;
                 padding-left: 8px;
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
                 height: 25px;
                 border: none;
                 font-size: 11px
-                
-            
+            }
+            .cate_but:hover .dropdown{
+                display: flex;
             }
             .dropdown{
-                display:flex;
+                display:none;
                 flex-direction: column;
+                row-gap: 0.5px;
                 position: absolute;
+                padding-bottom: 2px;
+                border-left-style: solid;
+                border-bottom-style:solid ;
+                border-width: 1px;
+                background-color:white ;
+                top: 26px;
+                left: -1px;
+                min-width: 110px;
+                box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
+                z-index: 1;
+            }
+            .dropdown div{
                 padding-left: 10px;
                 
-                background-color:white ;
-                top: 25px;
-                min-width: 110px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
+            }
+            .dropdown div:hover {
+                background-color: blue;
+                color: white;
             }
             .sear{
                 position: relative;
