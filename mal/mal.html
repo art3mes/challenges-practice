@@ -10,6 +10,10 @@
                 padding: 0;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
+            p{
+                padding: 0;
+                margin: 0;
+            }
             .mainbody{
                 display: flex;
                 flex-direction: column;
@@ -74,7 +78,7 @@
                 margin-left: -5px;
                 
             }
-            .userbut img{
+            .userbut img, .cate_but img{
                 width: 10px;
                 padding-top: 5px;
             }
@@ -127,6 +131,38 @@
                 height: 34px;
                 background-color: rgb(255, 99, 43);
                 margin-left: 5px;
+            }
+            .cate{
+                margin-right: 2px;
+            }
+            .cate_but{
+                display: flex;
+                position: relative;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 50px;
+                background-color:skyblue;
+                padding-right: 5px;
+                padding-left: 8px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                height: 25px;
+                border: none;
+                font-size: 11px
+                
+            
+            }
+            .dropdown{
+                display:flex;
+                flex-direction: column;
+                position: absolute;
+                padding-left: 10px;
+                
+                background-color:white ;
+                top: 25px;
+                min-width: 110px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
             }
             .sear{
                 position: relative;
@@ -190,7 +226,24 @@
                     <div class="foxcon"><img class="fox" src="thumbs/bunkasai.png"> </div>
                 </div>
                 <div class="top_r2_right">
-                    <div class="cate">dropdown</div>
+                    <div class="cate">
+                        <span class="cate_but">All <img src="thumbs/down-arrow.png">
+                                <div class="dropdown">
+                                    <div>All</div>
+                                    <div>Anime</div>
+                                    <div>Mange</div>
+                                    <div>Characters</div>
+                                    <div>People</div>
+                                    <div>Companies</div>
+                                    <div>Manga Store</div>
+                                    <div>News</div>
+                                    <div>Featured Articles</div>
+                                    <div>Forums</div>
+                                    <div>CLubs</div>
+                                    <div>Users</div>
+                                </div>
+                            </span>
+                    </div>
                     <div class="sear"> <input class="searchbar" type="text" placeholder="Search Anime, Manga, and more..."></div>
                     <div class="search"><img src="thumbs/search.png"> </div>
                 </div>
