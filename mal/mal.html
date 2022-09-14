@@ -109,6 +109,7 @@
                 padding-right: 4px;
             }
             .text{
+                position: relative;
                 font-size: 14px;
                 font-weight: 700;
                 color: white;
@@ -119,6 +120,42 @@
                 justify-content: center;
                 padding-left: 8px;
                 padding-right: 8px;
+                cursor:default;
+            }
+            .text:hover{
+                background-color: #E1E7F5;
+                color: black;
+            }
+            .text:hover .dropdown_right{
+                display: flex;
+            }
+            .dropdown_right{
+                display:none;
+                flex-direction: column;
+                row-gap: 0.5px;
+                position: absolute;
+                padding-bottom: 2px;
+                
+                background-color:#E1E7F5;
+                color: black;
+                top: 34px;
+                left: 0px;
+                width:160px;
+                z-index: 1;
+                
+            }
+            .dropdown_right div{
+                padding: 10px;
+                padding-left: 8px;
+                font-size: 15px;
+                font-weight: 400;
+            
+                
+            }
+            .dropdown_right div:hover{
+                background-color: #1c439b;
+                color: white;
+                cursor: pointer;
             }
             .fox{
                 width: 32px;
@@ -131,7 +168,10 @@
                 width: 54px;
                 height: 34px;
                 background-color: rgb(255, 99, 43);
-                margin-left: 5px;
+                
+            }
+            .foxcon:hover{
+                background-color: #b94d00;
             }
             .cate{
                 margin-right: 2px;
@@ -230,13 +270,69 @@
             </div>
             <div class="top_r2">
                 <div class="top_r2_left">
-                    <div class="text">Anime</div>
-                    <div class="text">Mange</div>
-                    <div class="text">Community</div>
-                    <div class="text">Industry</div>
-                    <div class="text">Watch</div>
-                    <div class="text">Read</div>
-                    <div class="text">Help</div>
+                    <div class="text">Anime
+                        <div class="dropdown_right">
+                            <div>Anime Search</div>
+                            <div>Top Anime</div>
+                            <div>Seasonal Anime</div>
+                            <div>Videos</div>
+                            <div>Reviews</div>
+                            <div>Recommendations</div>
+                            <div>2022 Challenge</div>
+                            <div>Fantasy Anime League</div>
+                        </div>
+                    </div>
+                    <div class="text">Manga
+                        <div class="dropdown_right">
+                            <div>Manga Search</div>
+                            <div>Top Manga</div>
+                            <div>Manga Store</div>
+                            <div>Reviews</div>
+                            <div>Recommendations</div>
+                            <div>2022 Challenge</div>
+                        </div>
+                    </div>
+                    <div class="text">Community
+                        <div class="dropdown_right">
+                            <div>Interest Stacks</div>
+                            <div>Forums</div>
+                            <div>Clubs</div>
+                            <div>Blogs</div>
+                            <div>Users</div>
+                        </div>
+                    </div>
+                    <div class="text">Industry
+                        <div class="dropdown_right">
+                            <div>News</div>
+                            <div>Featured Articles</div>
+                            <div>People</div>
+                            <div>Characters</div>
+                            <div>Companies</div>
+                            <div>MALxJapan</div>
+                        </div>
+                    </div>
+                    <div class="text">Watch
+                        <div class="dropdown_right">
+                            <div>Episode Videos</div>
+                            <div>Anime Trailers</div>
+                        </div>
+                    </div>
+                    <div class="text">Read
+                        <div class="dropdown_right">
+                            <div>Manga Store</div>
+                        </div>
+                    </div>
+                    <div class="text">Help
+                        <div class="dropdown_right">
+                            <div>About</div>
+                            <div>Support</div>
+                            <div>Advertising</div>
+                            <div>FAQ</div>
+                            <div>Report</div>
+                            <div>Staff</div>
+                            <div>MAL Supporter</div>
+                        </div>
+                    </div>
                     <div class="foxcon"><img class="fox" src="thumbs/bunkasai.png"> </div>
                 </div>
                 <div class="top_r2_right">
