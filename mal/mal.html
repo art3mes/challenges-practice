@@ -4,6 +4,7 @@
         <title>
             Dororo - MyAnimeList.net
         </title>
+        <link rel="stylesheet" href="topbars.css">
         <style>
             body{
                 margin: 0;
@@ -20,286 +21,7 @@
                 align-items: center;
                 justify-content: center;
             }
-            .top_r1{
-                padding: 5px 0 5px 0;
-                
-                display: flex;
-                flex-direction: row;
-                width: 1060px;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .top_r1_right{
-                display: flex;
-                flex-direction: row;
-                column-gap: 15px;
-                align-items: center;
-            }
-            .logo{
-                font-size: 30px;
-                color: #1c439b;
-                font-weight: bolder;
-                cursor: pointer;
-            }
-            .hideads{
-                width: 114px;
-                font-weight: bolder;
-                background-color: #eb6100;
-                border: none;
-                color: white;
-                height: 26px;
-                cursor: pointer;
-            }
-           .icocon{
-                
-                width: 35px;
-                height: 30px;
-                display: flex;
-                margin-right: -5px;
-                align-items: center;
-                border-width: 1px;
-                border-color: rgb(202, 199, 199);
-                border-right-style: solid;
-                cursor: pointer;
-            }
             
-            .icon{
-                width: 25px;
-            }
-            .userbut{
-                width: 10ox;
-                font-weight: bold;
-                font-size: 16px;
-                border: none;
-                background-color: white;
-                cursor: pointer;
-                margin-right: -14px;
-                padding-right: 7px;
-                margin-left: -5px;
-                
-            }
-            .userbut img, .cate_but img{
-                width: 10px;
-                padding-top: 5px;
-            }
-            .userthumb{
-                width: 30px;
-                height: 30px;
-                object-fit: cover;
-                padding-top: 5px;
-            }
-            .top_r2{
-                display: flex;
-                flex-direction: row;
-                width:1060px ;
-                position: relative;
-                background-color: #1c439b;
-            }
-            .top_r2_left,.top_r2_right{
-                
-                display: flex;
-                align-items: center;
-            }
-            .top_r2_right{
-                position: absolute;
-                right: 0;
-                display: flex;
-                align-items: center;
-                height: 34px;
-                padding-right: 4px;
-            }
-            .text{
-                position: relative;
-                font-size: 14px;
-                font-weight: 700;
-                color: white;
-                height: 34px;
-                width: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-left: 8px;
-                padding-right: 8px;
-                cursor:default;
-            }
-            .text:hover{
-                background-color: #E1E7F5;
-                color: black;
-            }
-            .text:hover .dropdown_right{
-                display: flex;
-            }
-            .dropdown_right{
-                display:none;
-                flex-direction: column;
-                row-gap: 0.5px;
-                position: absolute;
-                padding-bottom: 2px;
-                
-                background-color:#E1E7F5;
-                color: black;
-                top: 34px;
-                left: 0px;
-                width:160px;
-                z-index: 1;
-                
-            }
-            .dropdown_right div{
-                padding: 10px;
-                padding-left: 8px;
-                font-size: 13px;
-                font-weight: 400;
-            
-                
-            }
-            .dropdown_right div:hover{
-                background-color: #1c439b;
-                color: white;
-                cursor: pointer;
-            }
-            .fox{
-                width: 32px;
-                height: 32px;
-            }
-            .foxcon{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 54px;
-                height: 34px;
-                background-color: rgb(255, 99, 43);
-                
-            }
-            .foxcon:hover{
-                background-color: #b94d00;
-            }
-            .cate{
-                margin-right: 1px;
-            }
-            .cate_but{
-                display: flex;
-                position: relative;
-                flex-direction: row;
-                align-items: center;
-                column-gap: 50px;
-                background-color:white;
-                padding-right: 5px;
-                padding-left: 8px;
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
-                height: 25px;
-                border: none;
-                font-size: 11px
-            }
-            .cate_but:hover{
-                border: solid;
-                border-width: 1px;
-                padding-right: 4px;
-                padding-left: 7px;
-                height: 24px;
-                cursor: default;
-
-            }
-            .cate_but:hover .dropdown{
-                display: flex;
-
-            }
-            .dropdown{
-                display:none;
-                flex-direction: column;
-                row-gap: 0.5px;
-                position: absolute;
-                padding-bottom: 1px;
-                
-                border-left-style: solid;
-                border-bottom-style:solid ;
-                border-width: 1px;
-                background-color:white ;
-                top: 26px;
-                left: -1px;
-                min-width: 110px;
-                box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
-                z-index: 1;
-            }
-            .dropdown div{
-                
-                padding: 1px 0 1px 10px;
-
-                
-            }
-            .dropdown div:hover {
-                background-color: rgb(25, 156, 200);
-                color: white;
-                cursor: default;
-            }
-            .sear{
-                position: relative;
-                right: 0;
-            }
-            .searchbar{
-                
-                font-size: 11px;
-                color: grey;
-                padding-left: 6px;
-                padding: 7px 0 6px 8px;
-                width: 300px;
-                
-                display: block;
-                
-                border-style: solid;
-                
-                border:none;
-                background-color:white;
-            }
-            .searchbar:focus{
-                outline: none;
-            }
-            .search{
-                width: 27px;
-                height: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color:#E1E7F5;
-                border-top-right-radius: 6px;
-                border-bottom-right-radius: 6px;
-                
-            }
-            .search img{
-                width: 18px;
-                height: 18px;
-            }
-            .top_r3{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                background-color: #E1E7F5;
-                border-bottom-style: solid;
-                border-width: 1px;
-                border-color: #1c439b;
-            }
-            .top_r3_left{
-                font-size: 22px;
-                font-weight: 700;
-                padding: 4px 0px 5px 7px;
-            }
-            .top_r3_right{
-                font-size: 15px;
-                display: flex;
-                align-items: center;
-                padding-right: 5px;
-                color:#1c439b;
-
-            }
-            .top_r3_right:hover{
-                cursor: pointer;
-                text-decoration: underline;
-            }
-            .top_r3_right img{
-                width: 14px;
-                padding-right: 5px;
-                
-            }
         </style>
     </head>
     <body>
@@ -412,8 +134,15 @@
                 <div class="top_r3_right"><img src="thumbs/pencil.png"> Edit</div>
             </div>
         </div>
-        <div class="maincontent">main</div>
-        <div class="bottombar">bot</div>
+        
+        <div class="maincontent">
+            <div>sidebar</div>
+            <div>
+                <div>info</div>
+                <div>bottom</div>
+            </div>
+        </div>
+       
     </div>
     </body>
 </html>
