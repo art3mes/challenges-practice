@@ -18,11 +18,33 @@
     border-width: 1px;
     border-color: rgb(228, 228, 228);
 }
-.coverthumb_container img{
+.coverart{
     width: 245px;
     height: 353px;
     object-fit: cover;
     
+}
+.coverart:hover{
+    cursor: pointer;
+}
+.coverart:hover .pinterest{    /*check this. file not visible on hover*/
+    visibility: visible;
+}
+
+.pinterest img{
+    
+    width: 45px;
+    height: 17px;
+    border-radius: 3px;
+}
+.coverthumb_thumbnail{
+    position: relative;
+}
+.pinterest{
+    visibility: hidden;     /*check this*/
+    position: absolute;
+    top: 137px;
+    left: 50px;
 }
 .sidebar_r1{
     display: flex;
