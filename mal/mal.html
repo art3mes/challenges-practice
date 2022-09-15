@@ -27,8 +27,99 @@
                 justify-content: space-between;
             }
             .sidebar{
+                width: 245px;
+                margin-top: 7px;
+                margin-left: 15px;
+                background-color:white;
+                display: flex;
+                flex-direction: column;
+                left: 0;
+                padding-bottom: 3000px;
+                padding-top: 5px;
+                padding-right: 4px;
+                border-right-style: solid;
+                border-width: 1px;
+                border-color: rgb(228, 228, 228);
+            }
+            .coverthumb_container{
+            
+            }
+            .coverthumb_container img{
+                width: 245px;
+                height: 353px;
+                object-fit: cover;
                 
             }
+            .sidebar_r1{
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                padding-top: 7px;
+                
+            }
+            .sidebar_r1 div{
+                border-bottom-style: solid;
+                border-width: 1px;
+                border-color:  rgb(25, 156, 200);
+                padding-bottom: 5px;
+                padding-left: 3px;
+                padding-top: 5px;
+                color:  #1c439b;
+            }
+            .sidebar_r1:hover .content{
+                background-color: #1c439b;
+                color: white;
+                cursor: pointer;
+            }
+            .sidebar_r2{
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                column-gap: 15px;
+            }
+            .sidebar_r2 img{
+                width: 35px;
+                height: 35px;
+                border-radius: 2px;
+            }
+            .sidebar_r3{
+                padding-top: 30px;
+            }
+            .header{
+                font-size: 13px;
+                font-weight: 700;
+                border-bottom-style: solid;
+                border-width: 1px;
+                border-color: rgb(188, 188, 188);
+                padding-bottom: 5px;
+            }
+            .row_body{
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                row-gap: 10px;
+                padding-bottom:20px ;
+            }
+            .row_body span{
+                font-weight: 700;
+                color: black;
+            }
+            .bluec{
+                color:#1c439b;
+            }
+            .bluec p{
+                display: inline-block;
+            }
+            .bluec:hover p{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .sidebar_r6 span{
+                font-size: 12px;
+                color: #1c439b;
+            }
+           
         </style>
     </head>
     <body>
@@ -139,8 +230,8 @@
             <div class="top_r3">
                 <div class="top_r3_left">Dororo</div>
                 <div class="top_r3_right"><img src="thumbs/pencil.png"> Edit</div>
-            </div>
-        </div>
+            
+             </div>
         
         <div class="maincontent">
             <div class="sidebar">
@@ -148,8 +239,8 @@
                         <img src="thumbs/coverthumb.jpg">
                     </div>
                     <div class="sidebar_r1">
-                        <div>Add to My List</div>
-                        <div>Add to Favorites</div>
+                        <div class="content">Add to My List</div>
+                        <div class="content">Add to Favorites</div>
                     </div>
                     <div class="sidebar_r2">
                         <img src="thumbs/fb.png">
@@ -159,43 +250,52 @@
 
                     </div>
                     <div class="sidebar_r3">
-                        <div>Alternative Titles</div>
-                        <div><span>Synonyms: </span>Dororo to Hyakkimaru</div>
-                        <div><span>Japanese: </span>どろろ</div>
-                        <div><span>English: </span>Dororo</div>
-                        <div><span>French: </span>Dororo to Hyakkimaru</div>
+                        <div class="header">Alternative Titles</div>
+                        <div class="row_body">
+                            <div><span>Synonyms: </span>Dororo to Hyakkimaru</div>
+                            <div><span>Japanese: </span>どろろ</div>
+                            <div><span>English: </span>Dororo</div>
+                            <div><span>French: </span>Dororo to Hyakkimaru</div>
+                        </div>
+                       
 
                     </div>
                     <div class="sidebar_r4">
-                        <div>Information</div>
-                        <div><span>Type: </span>TV</div>
-                        <div><span>Episodes: </span>24</div>
-                        <div><span>Status: </span>Finished Airing</div>
-                        <div><span>Aired: </span>Jan 7, 2019 to Jun 24, 2019</div>
-                        <div><span>Premiered: </span> Winter 2019</div>
-                        <div><span>Broadcast: </span> Mondays at 22:30 (JST)</div>
-                        <div><span>Producers: </span>Twin Engine</div>
-                        <div><span>Licensors: </span> Sentai Filmworks</div>
-                        <div><span>Studios: </span> Tezuka Productions, MAPPA</div>
-                        <div><span>Source: </span>Manga</div>
-                        <div><span>Genres: </span> Action, Adventure, Supernatural</div>
-                        <div><span>Themes: </span> Historical, Mythology, Samurai</div>
-                        <div><span>Demographic: </span>Shounen</div>
-                        <div><span>Duration: </span>24 min. per ep.</div>
-                        <div><span>Rating: </span>R - 17+ (violence & profanity)</div>
+                        <div class="header">Information</div>
+                        <div class="row_body">
+                            <div><span>Type: </span>TV</div>
+                            <div><span>Episodes: </span>24</div>
+                            <div><span>Status: </span>Finished Airing</div>
+                            <div><span>Aired: </span>Jan 7, 2019 to Jun 24, 2019</div>
+                            <div class="bluec"><span>Premiered: </span> <p>Winter 2019</p></div>
+                            <div><span>Broadcast: </span> Mondays at 22:30 (JST)</div>
+                            <div class="bluec"><span>Producers: </span><p>Twin Engine</p></div>
+                            <div class="bluec"><span>Licensors: </span><p> Sentai Filmworks</p></div>
+                            <div class="bluec"><span>Studios: </span><p> Tezuka Productions,</p> <p>MAPPA</p></div>
+                            <div class="bluec"><span>Source: </span><p>Manga</p></div>
+                            <div class="bluec"><span>Genres: </span><p> Action,</p> <p>Adventure,</p> <p>Supernatural</p></div>
+                            <div class="bluec"><span>Themes: </span><p> Historical,</p> <p>Mythology,</p> <p>Samurai</p></div>
+                            <div class="bluec"><span>Demographic: </span><p>Shounen</p></div>
+                            <div><span>Duration: </span>24 min. per ep.</div>
+                            <div><span>Rating: </span>R - 17+ (violence & profanity)</div>
+                        </div>
+                       
 
                     </div>
                     <div class="sidebar_r5">
-                        <div>Statistics</div>
-                        <div><span>Score: </span>8.24<sup>1</sup> (scored by 539,314 users)</div>
-                        <div><span>Ranked: </span>#287<sup>2</sup></div>
-                        <div><span>Popularity: </span>#115</div>
-                        <div><span>Members: </span>1,051,215</div>
-                        <div><span>Favorites: </span>17,746</div>
+                        <div class="row_body">
+                            <div class="header">Statistics</div>
+                            <div><span>Score: </span>8.24<sup>1</sup> (scored by 539,314 users)</div>
+                            <div><span>Ranked: </span>#287<sup>2</sup></div>
+                            <div><span>Popularity: </span>#115</div>
+                            <div><span>Members: </span>1,051,215</div>
+                            <div><span>Favorites: </span>17,746</div>
+                        </div>
+                        
 
                     </div>
                     <div class="sidebar_r6">
-                        <div>External Links</div>
+                        <div class="header">External Links</div>
                         <div><span>Official Site, </span><span>AnimeDB, </span><span>AnimeNewsNetwork, </span><span>Wikipedia</span></div>
 
                     </div>
@@ -204,6 +304,7 @@
         </div>
         <div>bottom</div>
        
+     </div>
     </div>
     </body>
 </html>
