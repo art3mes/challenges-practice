@@ -65,8 +65,9 @@
                 padding-left: 3px;
                 padding-top: 5px;
                 color:  #1c439b;
+                
             }
-            .sidebar_r1:hover .content{
+            .content:hover{
                 background-color: #1c439b;
                 color: white;
                 cursor: pointer;
@@ -81,6 +82,11 @@
                 width: 35px;
                 height: 35px;
                 border-radius: 2px;
+                transition: opacity 0.3s;
+            }
+            .sidebar_r2_img:hover{
+                opacity: 0.5;
+                cursor: pointer;
             }
             .sidebar_r3{
                 padding-top: 30px;
@@ -111,14 +117,16 @@
             .bluec p{
                 display: inline-block;
             }
-            .bluec:hover p{
+            .punderline:hover{
                 cursor: pointer;
                 text-decoration: underline;
             }
-            .sidebar_r6 span{
+            .sidebar_r6 p{
+                display: inline-block;
                 font-size: 12px;
                 color: #1c439b;
             }
+            
            
         </style>
     </head>
@@ -243,10 +251,10 @@
                         <div class="content">Add to Favorites</div>
                     </div>
                     <div class="sidebar_r2">
-                        <img src="thumbs/fb.png">
-                        <img src="thumbs/twit.png">
-                        <img src="thumbs/redd.png">
-                        <img src="thumbs/tumb.png">
+                        <img class="sidebar_r2_img" src="thumbs/fb.png">
+                        <img class="sidebar_r2_img" src="thumbs/twit.png">
+                        <img class="sidebar_r2_img"src="thumbs/redd.png">
+                        <img class="sidebar_r2_img" src="thumbs/tumb.png">
 
                     </div>
                     <div class="sidebar_r3">
@@ -267,15 +275,15 @@
                             <div><span>Episodes: </span>24</div>
                             <div><span>Status: </span>Finished Airing</div>
                             <div><span>Aired: </span>Jan 7, 2019 to Jun 24, 2019</div>
-                            <div class="bluec"><span>Premiered: </span> <p>Winter 2019</p></div>
+                            <div class="bluec"><span>Premiered: </span> <p class="punderline">Winter 2019</p></div>
                             <div><span>Broadcast: </span> Mondays at 22:30 (JST)</div>
-                            <div class="bluec"><span>Producers: </span><p>Twin Engine</p></div>
-                            <div class="bluec"><span>Licensors: </span><p> Sentai Filmworks</p></div>
-                            <div class="bluec"><span>Studios: </span><p> Tezuka Productions,</p> <p>MAPPA</p></div>
-                            <div class="bluec"><span>Source: </span><p>Manga</p></div>
-                            <div class="bluec"><span>Genres: </span><p> Action,</p> <p>Adventure,</p> <p>Supernatural</p></div>
-                            <div class="bluec"><span>Themes: </span><p> Historical,</p> <p>Mythology,</p> <p>Samurai</p></div>
-                            <div class="bluec"><span>Demographic: </span><p>Shounen</p></div>
+                            <div class="bluec"><span>Producers: </span><p class="punderline">Twin Engine</p></div>
+                            <div class="bluec"><span>Licensors: </span><p class="punderline"> Sentai Filmworks</p></div>
+                            <div class="bluec"><span>Studios: </span><p class="punderline"> Tezuka Productions,</p> <p class="punderline">MAPPA</p></div>
+                            <div class="bluec"><span>Source: </span><p class="punderline">Manga</p></div>
+                            <div class="bluec"><span>Genres: </span><p class="punderline"> Action,</p> <p class="punderline">Adventure,</p> <p class="punderline">Supernatural</p></div>
+                            <div class="bluec"><span>Themes: </span><p class="punderline"> Historical,</p> <p class="punderline">Mythology,</p> <p class="punderline">Samurai</p></div>
+                            <div class="bluec"><span>Demographic: </span><p class="punderline">Shounen</p></div>
                             <div><span>Duration: </span>24 min. per ep.</div>
                             <div><span>Rating: </span>R - 17+ (violence & profanity)</div>
                         </div>
@@ -296,7 +304,7 @@
                     </div>
                     <div class="sidebar_r6">
                         <div class="header">External Links</div>
-                        <div><span>Official Site, </span><span>AnimeDB, </span><span>AnimeNewsNetwork, </span><span>Wikipedia</span></div>
+                        <div><p class="punderline">Official Site, </p ><p class="punderline">AnimeDB, </p ><p class="punderline">AnimeNewsNetwork, </p ><p class="punderline">Wikipedia</p ></div>
 
                     </div>
             </div>
