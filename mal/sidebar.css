@@ -1,8 +1,4 @@
-.maincontent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .sidebar{
     width: 245px;
     margin-top: 4px;
