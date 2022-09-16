@@ -6,6 +6,7 @@
         </title>
         <link rel="stylesheet" href="topbars.css">
         <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="info_1.css">
         <style>
             body{
                 margin: 0;
@@ -26,209 +27,6 @@
                 display: flex;
                 flex-direction: row;
                 
-            }
-            .info{
-                display: flex;
-                flex-direction: column;
-                border-right-style: solid;
-                border-width: 1px;
-                padding-right: 12px;
-                border-color: rgb(224, 224, 224);
-            }
-            .info_r1{
-                display: flex;
-                flex-direction: row;
-                font-size: 11px;
-                column-gap: 6px;
-                color: #1c439b;
-                padding-top: 8px;
-                margin-left: 5px;
-                padding-bottom: 3px;
-                border-bottom-style: solid;
-                border-width: 1px;
-                border-color: #1c439b;
-            }
-            .info_r1 div{
-                padding: 3px 3px 2px 3px;
-                transition: background-color 0.1s;
-            }
-            .r1_head_active{
-                background-color: #1c439b;
-                color: white;
-            }
-            .r1_head:hover{
-                background-color: #1c439b;
-                color: white;
-                cursor: pointer;
-
-            }
-
-            .info_r2{
-                display: flex;
-                flex-direction: row;
-                padding-top: 15px;
-                margin-left: 5px;
-                font-size: 11px;
-                column-gap: 5px;
-                color: #1c439b;
-                
-
-            }
-            .info_r2_header:hover{
-                text-decoration: underline;
-                cursor: pointer;
-            }
-
-            .info_r3_left{
-                display: flex;
-                flex-direction: column;
-                row-gap: 9px;
-            }
-            .info_r3{                   /*from here */
-                display: flex;
-                flex-direction: row;
-                padding-top: 22px;
-                padding-left: 5px;
-                column-gap: 15px;
-                
-            }
-            .r3_scores{
-                background-color:rgb(246, 246, 246);
-                display: flex;
-                flex-direction: row;
-                border-style: solid;
-                border-color: rgb(188, 188, 188);
-                border-width: 1px;
-                box-shadow: inset 1px 1px 1px 0px  rgba(0,0,0,0.02);
-                padding-right: 60px;
-
-            }
-            .score{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border-right-style: solid;
-                border-width: 1px;
-                border-color: rgb(224, 224, 224);
-                margin: 15px 0px 12px 8px;
-                padding-right: 15px;
-                
-                
-            }
-            .score_blue{
-                background-color: #1c439b;
-                color: white;
-                font-size: 9px;
-                font-weight: 400;
-                width: 60px;
-                height: 14px;
-                display: flex;
-                align-items: center;
-                border-radius: 2px;
-                padding-bottom: 1px;
-                justify-content: center;
-            }
-            .score_score{
-                font-weight: bold;
-                font-size: 21px;
-                display: flex;
-                padding-top: 5px;
-                
-            }
-            .score_user{
-                font-size: 9px;
-            }
-            .rank{
-                display: flex;
-                flex-direction: column;
-                row-gap: 21px;
-                padding-left: 15px;
-                padding-top: 18px;
-            }
-            .rank_r1{
-                display: flex;
-                flex-direction: row;
-                column-gap: 25px;
-            }
-            .rank_r1 div{
-                font-size: 15px;
-            }
-            .rank_r1 span{
-                font-weight: bold;
-            }
-            .rank_r2{
-                display: flex;
-                flex-direction: row;
-                column-gap: 10px;
-            }
-            .rank_r2 div{
-                color: #1c439b;
-                font-size: 10px;
-            }
-            .bord{
-                border-right-style: solid;
-                border-color: rgb(188, 188, 188);
-                border-width: 1px;
-                padding-right: 10px;
-            }
-
-            .info_r3_right img{
-                width: 200px;
-                height: 133px;
-            }
-            .r3_rate{
-                background-color:rgb(246, 246, 246);
-                display: flex;
-                flex-direction: row;
-                
-                border-style: solid;
-                border-color: rgb(204, 204, 204);
-                border-width: 1px;
-                box-shadow: inset 1px 1px 1px 0px  rgba(0,   0,0,0.02);
-                font-size: 11px;
-                
-            }
-            .r3_rate div{
-                
-                border-style: solid;
-                border-width: 1px;
-                border-radius: 3px;
-                display: flex;
-                flex-direction: row;
-                column-gap: 12px;
-                margin: 7px 0px 7px 8px;
-                padding: 3px 7px 3px 7px;
-            }
-            .bluet1,.bluet2{
-                color: #1c439b;
-
-            }
-            .bluet1 img{
-                padding-left: 10px;
-                border-color: #1c439b;
-            }
-            .bluet1 img,.bluet2 img{
-                width: 8px;
-                height: 10px;
-                margin-top: 3px;
-
-            }
-            .bluet2,.bluet3{
-                border-color: rgb(188, 188, 188);
-            }
-            .bluet3 span{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 11px;
-                padding-left: 8px;
-            }
-            .bluet3 img{
-                width: 15px;
-                height: 15px;
-                border-radius: 10px;
-                margin-left: 4px;
             }
             
         </style>
@@ -412,7 +210,7 @@
 
                     </div>
             </div>
-            <div class="info">
+            <div class="info_1">
                 <div class="info_r1">
                     <div class="r1_head_active">Details</div>
                     <div class="r1_head">Characters & Staff</div>
@@ -451,7 +249,7 @@
                                 <div class="rank_r2">
                                     <div class="bord">Winter 2019</div>
                                     <div class="bord">TV</div>
-                                    <div>Tezuka Productions, MAPPA</div>
+                                    <div class="bored">Tezuka Productions,</div><div class="bored">MAPPA</div>
                                 </div>
                             </div>
                         </div>
@@ -465,6 +263,11 @@
                         <img src="thumbs/vidthumb.jpg">
                     </div>
                 </div>
+                <div class="listpublic">
+                    <div>* Your list is public by default.</div>
+                    <div><span>More Videos</span></div>
+                </div>
+                
             </div>
         </div>
         <div>bottom</div>
