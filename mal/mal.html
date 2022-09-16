@@ -79,17 +79,31 @@
             .info_r3{                   /*from here */
                 display: flex;
                 flex-direction: row;
+                padding-top: 22px;
+                padding-left: 5px;
                 
             }
             .r3_scores{
-                background-color: antiquewhite;
+                background-color:rgb(246, 246, 246);
                 display: flex;
                 flex-direction: row;
                 border-style: solid;
+                border-color: rgb(188, 188, 188);
+                border-width: 1px;
+                box-shadow: inset 0px 0px 1px 1px  rgba(0,   0,0,0.05);
+                padding-right: 60px;
             }
             .score{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-right-style: solid;
+                border-width: 1px;
+                border-color: rgb(188, 188, 188);
+                margin: 15px 0px 15px 8px;
+                padding-right: 15px;
+
                 
             }
             .score_blue{
@@ -102,13 +116,14 @@
                 display: flex;
                 align-items: center;
                 border-radius: 2px;
-                padding-bottom: 2px;
+                padding-bottom: 1px;
                 justify-content: center;
             }
             .score_score{
                 font-weight: bold;
                 font-size: 21px;
                 display: flex;
+                padding-top: 5px;
                 
             }
             .score_user{
@@ -117,6 +132,9 @@
             .rank{
                 display: flex;
                 flex-direction: column;
+                row-gap: 21px;
+                padding-left: 15px;
+                padding-top: 20px;
             }
             .rank_r1{
                 display: flex;
@@ -132,10 +150,22 @@
             .rank_r2{
                 display: flex;
                 flex-direction: row;
+                column-gap: 10px;
             }
             .rank_r2 div{
                 color: #1c439b;
                 font-size: 10px;
+            }
+            .bord{
+                border-right-style: solid;
+                border-color: rgb(188, 188, 188);
+                border-width: 1px;
+                padding-right: 10px;
+            }
+
+            .info_r3_right img{
+                width: 200px;
+                height: 133px;
             }
         </style>
     </head>
@@ -355,15 +385,19 @@
                                     <div>Members <span>1,051,599</span></div>
                                 </div>
                                 <div class="rank_r2">
-                                    <div>Winter 2019</div>
-                                    <div>TV</div>
+                                    <div class="bord">Winter 2019</div>
+                                    <div class="bord">TV</div>
                                     <div>Tezuka Productions, MAPPA</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="r3_rate">numebr</div>
+                        <div class="r3_rate">
+                            <div>Completed <img src="thumbs/down-arrow.png"></div>
+                        </div>
                     </div>
-                    <div class="info_r3_right">picutere</div>
+                    <div class="info_r3_right">
+                        <img src="thumbs/vidthumb.jpg">
+                    </div>
                 </div>
             </div>
         </div>
