@@ -79,6 +79,63 @@
             .info_r3{                   /*from here */
                 display: flex;
                 flex-direction: row;
+                
+            }
+            .r3_scores{
+                background-color: antiquewhite;
+                display: flex;
+                flex-direction: row;
+                border-style: solid;
+            }
+            .score{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .score_blue{
+                background-color: #1c439b;
+                color: white;
+                font-size: 9px;
+                font-weight: 400;
+                width: 60px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                border-radius: 2px;
+                padding-bottom: 2px;
+                justify-content: center;
+            }
+            .score_score{
+                font-weight: bold;
+                font-size: 21px;
+                display: flex;
+                
+            }
+            .score_user{
+                font-size: 9px;
+            }
+            .rank{
+                display: flex;
+                flex-direction: column;
+            }
+            .rank_r1{
+                display: flex;
+                flex-direction: row;
+                column-gap: 25px;
+            }
+            .rank_r1 div{
+                font-size: 15px;
+            }
+            .rank_r1 span{
+                font-weight: bold;
+            }
+            .rank_r2{
+                display: flex;
+                flex-direction: row;
+            }
+            .rank_r2 div{
+                color: #1c439b;
+                font-size: 10px;
             }
         </style>
     </head>
@@ -285,8 +342,26 @@
                 </div>
                 <div class="info_r3">
                     <div class="info_r3_left">    <!--from here-->
-                        <div>score</div>
-                        <div>numebr</div>
+                        <div class="r3_scores">
+                            <div class="score">
+                                <div class="score_blue">SCORE</div>
+                                <div class="score_score">8.24</div>
+                                <div class="score_user">539,509 users</div>
+                            </div>
+                            <div class="rank">
+                                <div class="rank_r1">
+                                    <div>Ranked <span>#287</span></div>
+                                    <div>Popularity <span>#115</span></div>
+                                    <div>Members <span>1,051,599</span></div>
+                                </div>
+                                <div class="rank_r2">
+                                    <div>Winter 2019</div>
+                                    <div>TV</div>
+                                    <div>Tezuka Productions, MAPPA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="r3_rate">numebr</div>
                     </div>
                     <div class="info_r3_right">picutere</div>
                 </div>
