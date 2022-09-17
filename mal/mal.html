@@ -34,11 +34,78 @@
             .info_2{
                 display: flex;
                 flex-direction: column;
+                padding-top:25px;
+                margin-left: 6px;
             }
-            .info2_r1_text {
+            .info2_r1{
+                margin-bottom: 20px;
+            }
+            .info2_head{
+                font-weight: 700;
+                font-size: 12px;
+                border-bottom-style: solid;
+                border-width: 1px;
+                border-color: rgb(224, 224, 224);
+                padding-bottom: 5px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .info2_edit{
+                color:#1c439b ;
+                font-weight: 400;
+                font-size: 11px;
+            }
+            .info2_edit:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .info2_text {
+                padding-top: 6px;
                 display: inline-block;
                 color: black;
+                font-size: 11px;
+                
             }
+            .info2_r2 .info2_text{
+                padding-bottom: 15px;
+            }
+            
+            .info2_r2 {
+                border-bottom-style: solid;
+                border-width: 1px;
+                border-color:rgb(224, 224, 224);
+                margin-bottom: 55px;
+            }
+            .malxjapan_content{
+                display: flex;
+                flex-direction: row;
+                column-gap: 8px;
+                font-size: 11px;
+                color: #1c439b;
+                font-weight: 700;
+                max-width: 235px ;
+                line-height: 17px;
+                margin-bottom: 55px;
+                
+            }
+            .malxjapan_content_container img{
+                padding-top: 5px;
+                width:235px ;
+                height: 146px;
+                object-fit: cover;
+            }
+            .malxjapan_content_container{
+                transition: opacity 0.1s, text-decoration 0.1s;
+
+            }
+            .malxjapan_content_container:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                opacity: 0.8;
+            }
+
         </style>
     </head>
     <body>
@@ -283,22 +350,44 @@
 
                 <div class="info_2">
                     <div class="info2_r1">
-                        <div class="info2_head">Synopsis</div>
-                        <div class="info2_r1_text">The greedy samurai lord Daigo Kagemitsu's land is dying, and he would do anything for power, even renounce Buddha and make a pact with demons. His prayers are answered by 12 demons who grant him the power he desires by aiding his prefecture's growth, but at a price. When Kagemitsu's first son is born, the boy has no limbs, no nose, no eyes, no ears, nor even skin—yet still, he lives.<br>This child is disposed of in a river and forgotten. But as luck would have it, he is saved by a medicine man who provides him with prosthetics and weapons, allowing for him to survive and fend for himself. The boy lives and grows, and although he cannot see, hear, or feel anything, he must defeat the demons that took him as sacrifice. With the death of each one, he regains a part of himself that is rightfully his. For many years he wanders alone, until one day an orphan boy, Dororo, befriends him. The unlikely pair of castaways now fight for their survival and humanity in an unforgiving, demon-infested world.<br><br>[Written by MAL Rewrite]</div>
+                        <div class="info2_head">
+                            <div>Synopsis</div>
+                            <div class="info2_edit">Edit</div>
+                        </div>
+                        <div class="info2_text">The greedy samurai lord Daigo Kagemitsu's land is dying, and he would do anything for power, even renounce Buddha and make a pact with demons. His prayers are answered by 12 demons who grant him the power he desires by aiding his prefecture's growth, but at a price. When Kagemitsu's first son is born, the boy has no limbs, no nose, no eyes, no ears, nor even skin—yet still, he lives.<br><br>This child is disposed of in a river and forgotten. But as luck would have it, he is saved by a medicine man who provides him with prosthetics and weapons, allowing for him to survive and fend for himself. The boy lives and grows, and although he cannot see, hear, or feel anything, he must defeat the demons that took him as sacrifice. With the death of each one, he regains a part of himself that is rightfully his. For many years he wanders alone, until one day an orphan boy, Dororo, befriends him. The unlikely pair of castaways now fight for their survival and humanity in an unforgiving, demon-infested world.<br><br><br>[Written by MAL Rewrite]</div>
                     </div>
                     <div class="info2_r2">
-                        <div class="info2_head">Background</div>
-                        <div class="text"><p>No background information has been added to this title. Help improve our database by adding background information here.</p></div>
+                        <div class="info2_head">
+                            <div>Background</div>
+                            <div class="info2_edit">Edit</div>
+                        </div>
+                        <div class="info2_text"><p>No background information has been added to this title. Help improve our database by adding background information <span class="info2_edit">here.</span></p></div>
                     </div>
                     <div class="info2_r3">
-                        <div class="info2_head">MALxJapan -More than just anime-</div>
+                        <div class="info2_head">
+                            <div>MALxJapan -More than just anime-</div>
+                            <div class="info2_edit">Visit MALxJapan</div></div>
                         <div class="malxjapan_content">
-                            <div>image1</div>
-                            <div>image2</div>
-                            <div>image3</div>
+                            <div class="malxjapan_content_container">
+                                <img src="thumbs/malxjapan1.png">
+                                <div>MAL Bunkasai is now open! Check out what's happening 🎆</div>
+                            </div>
+                            <div class="malxjapan_content_container">
+                                <img src="thumbs/malxjapan2.png">
+                                <div>Vote for your favorite List Design from the MAL Bunkasai List Design Contest!</div>
+                            </div>
+                            <div class="malxjapan_content_container">
+                                <img src="thumbs/malxjapan3.png">
+                                <div>Aniplex Online Fest 2022 Watch Party at MAL on Sep 23. Give your comment!</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="info2_r4"></div>
+                    <div class="info2_r4">
+                        <div class="info2_head">
+                            <div>Related Anime</div>
+                            <div class="info2_edit">Edit</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             

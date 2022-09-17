@@ -152,8 +152,8 @@
 }
 
 .info_r3_right img{
-    width: 200px;
-    height: 133px;
+    width: 210px;
+    height: 143px;
 }
 .r3_rate{
     background-color:rgb(246, 246, 246);
@@ -226,6 +226,7 @@
 .listpublic span{
     color: #1c439b;
     font-size: 11px;
+    
 }
 .listpublic:hover span{
     cursor: pointer;
