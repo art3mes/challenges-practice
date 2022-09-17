@@ -1,0 +1,31 @@
+.cv_body{
+    display: flex;
+    flex-direction: row;
+}
+.cv_body_c1{
+    display: flex;
+    flex-direction: column;
+}
+.cv_body_r1{
+    display: flex;
+    flex-direction: row;
+}
+.cv_body_r_L,.cv_body_r_R{
+    display: flex;
+    flex-direction: row;
+}
+.cv_body_r_L_name{
+    font-size: 11px;
+    color: #1c439b;
+}
+.cv_body_r_L_name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cv_body_r_L_pos{
+    font-size: 9px;
+}
+.cv_body_r_pic{
+    width: 44px;
+    height: 64px;
+}
