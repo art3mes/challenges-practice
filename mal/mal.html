@@ -31,7 +31,14 @@
                 padding-right: 12px;
                 border-color: rgb(224, 224, 224);
             }
-            
+            .info_2{
+                display: flex;
+                flex-direction: column;
+            }
+            .info2_r1_text {
+                display: inline-block;
+                color: black;
+            }
         </style>
     </head>
     <body>
@@ -144,7 +151,7 @@
                 <div class="top_r3_right"><img src="thumbs/pencil.png"> Edit</div>
             
              </div>
-        
+        </div>
         <div class="maincontent">
             <div class="sidebar">
                     <div class="coverthumb_container">
@@ -213,65 +220,89 @@
 
                     </div>
             </div>
-            <div class="info_1">
-                <div class="info_r1">
-                    <div class="r1_head_active">Details</div>
-                    <div class="r1_head">Characters & Staff</div>
-                    <div class="r1_head">Episodes</div>
-                    <div class="r1_head">Videos</div>
-                    <div class="r1_head">Stats</div>
-                    <div class="r1_head">Reviews</div>
-                    <div class="r1_head">Recommendations</div>
-                    <div class="r1_head">Interest Stacks</div>
-                    <div class="r1_head">News</div>
-                    <div class="r1_head">Forum</div>
-                    <div class="r1_head">Clubs</div>
-                    <div class="r1_head">Pictures</div>
-                </div>
-                <div class="info_r2">
-                    <div class="info_r2_header">Top</div>
-                    <div >></div>
-                    <div class="info_r2_header">Anime</div>
-                    <div >></div>
-                    <div class="info_r2_header">Dororo</div>
-                </div>
-                <div class="info_r3">
-                    <div class="info_r3_left">    
-                        <div class="r3_scores">
-                            <div class="score">
-                                <div class="score_blue">SCORE</div>
-                                <div class="score_score">8.24</div>
-                                <div class="score_user">539,509 users</div>
+            <div class="maincontent_text">
+                <div class="info_1">
+                    <div class="info_r1">
+                        <div class="r1_head_active">Details</div>
+                        <div class="r1_head">Characters & Staff</div>
+                        <div class="r1_head">Episodes</div>
+                        <div class="r1_head">Videos</div>
+                        <div class="r1_head">Stats</div>
+                        <div class="r1_head">Reviews</div>
+                        <div class="r1_head">Recommendations</div>
+                        <div class="r1_head">Interest Stacks</div>
+                        <div class="r1_head">News</div>
+                        <div class="r1_head">Forum</div>
+                        <div class="r1_head">Clubs</div>
+                        <div class="r1_head">Pictures</div>
+                    </div>
+                    <div class="info_r2">
+                        <div class="info_r2_header">Top</div>
+                        <div >></div>
+                        <div class="info_r2_header">Anime</div>
+                        <div >></div>
+                        <div class="info_r2_header">Dororo</div>
+                    </div>
+                    <div class="info_r3">
+                        <div class="info_r3_left">    
+                            <div class="r3_scores">
+                                <div class="score">
+                                    <div class="score_blue">SCORE</div>
+                                    <div class="score_score">8.24</div>
+                                    <div class="score_user">539,509 users</div>
+                                </div>
+                                <div class="rank">
+                                    <div class="rank_r1">
+                                        <div>Ranked <span>#287</span></div>
+                                        <div>Popularity <span>#115</span></div>
+                                        <div>Members <span>1,051,599</span></div>
+                                    </div>
+                                    <div class="rank_r2">
+                                        <div class="bord">Winter 2019</div>
+                                        <div class="bord">TV</div>
+                                        <div class="bored">Tezuka Productions,</div><div class="bored">MAPPA</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="rank">
-                                <div class="rank_r1">
-                                    <div>Ranked <span>#287</span></div>
-                                    <div>Popularity <span>#115</span></div>
-                                    <div>Members <span>1,051,599</span></div>
-                                </div>
-                                <div class="rank_r2">
-                                    <div class="bord">Winter 2019</div>
-                                    <div class="bord">TV</div>
-                                    <div class="bored">Tezuka Productions,</div><div class="bored">MAPPA</div>
-                                </div>
+                            <div class="r3_rate">
+                                <div class="bluet1">Completed <img src="thumbs/down-arrow-blue.png"></div>
+                                <div class="bluet2">⭐(10) Masterpiece <img src="thumbs/down-arrow-blue.png"></div>
+                                <div class="bluet3">Episodes: <span>24/24 <img src="thumbs/blue-plus.png"></span> </div>
                             </div>
                         </div>
-                        <div class="r3_rate">
-                            <div class="bluet1">Completed <img src="thumbs/down-arrow-blue.png"></div>
-                            <div class="bluet2">⭐(10) Masterpiece <img src="thumbs/down-arrow-blue.png"></div>
-                            <div class="bluet3">Episodes: <span>24/24 <img src="thumbs/blue-plus.png"></span> </div>
+                        <div class="info_r3_right">
+                            <img src="thumbs/vidthumb.jpg">
                         </div>
                     </div>
-                    <div class="info_r3_right">
-                        <img src="thumbs/vidthumb.jpg">
+                    <div class="listpublic">
+                        <div>* Your list is public by default.</div>
+                        <div><span>More Videos</span></div>
                     </div>
+                    
                 </div>
-                <div class="listpublic">
-                    <div>* Your list is public by default.</div>
-                    <div><span>More Videos</span></div>
+
+                <div class="info_2">
+                    <div class="info2_r1">
+                        <div class="info2_head">Synopsis</div>
+                        <div class="info2_r1_text">The greedy samurai lord Daigo Kagemitsu's land is dying, and he would do anything for power, even renounce Buddha and make a pact with demons. His prayers are answered by 12 demons who grant him the power he desires by aiding his prefecture's growth, but at a price. When Kagemitsu's first son is born, the boy has no limbs, no nose, no eyes, no ears, nor even skin—yet still, he lives.<br>This child is disposed of in a river and forgotten. But as luck would have it, he is saved by a medicine man who provides him with prosthetics and weapons, allowing for him to survive and fend for himself. The boy lives and grows, and although he cannot see, hear, or feel anything, he must defeat the demons that took him as sacrifice. With the death of each one, he regains a part of himself that is rightfully his. For many years he wanders alone, until one day an orphan boy, Dororo, befriends him. The unlikely pair of castaways now fight for their survival and humanity in an unforgiving, demon-infested world.<br><br>[Written by MAL Rewrite]</div>
+                    </div>
+                    <div class="info2_r2">
+                        <div class="info2_head">Background</div>
+                        <div class="text"><p>No background information has been added to this title. Help improve our database by adding background information here.</p></div>
+                    </div>
+                    <div class="info2_r3">
+                        <div class="info2_head">MALxJapan -More than just anime-</div>
+                        <div class="malxjapan_content">
+                            <div>image1</div>
+                            <div>image2</div>
+                            <div>image3</div>
+                        </div>
+                    </div>
+                    <div class="info2_r4"></div>
                 </div>
-                
             </div>
+            
+            
         </div>
         <div>bottom</div>
        
