@@ -28,4 +28,5 @@
 .cv_body_r_pic{
     width: 44px;
     height: 64px;
+    object-fit: cover;
 }
