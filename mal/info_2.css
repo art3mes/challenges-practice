@@ -65,7 +65,6 @@
 }
 .malxjapan_content_container{
     transition: opacity 0.1s, text-decoration 0.1s;
-
 }
 .malxjapan_content_container:hover{
     cursor: pointer;
@@ -86,11 +85,9 @@
     padding-bottom: 3px;
 }
 .info2_r4_t1{
-    display: flex;
-    
+    display: flex;   
     width: 120px;
-    justify-content: right;
-    
+    justify-content: right;    
 }
 .info2_r4_t2,.info2_r4_t3{
     color: #1c439b;
