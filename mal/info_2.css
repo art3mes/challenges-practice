@@ -96,3 +96,24 @@
     text-decoration: underline;
     cursor: pointer;
 }
+.song{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.song_r,.song_r_internal{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+}
+.song_r_internal{
+    justify-content: left;
+}
+.song_r img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 10px;
+}
