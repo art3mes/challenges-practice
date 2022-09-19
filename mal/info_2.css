@@ -108,6 +108,7 @@
     flex-direction: column;
     row-gap: 5px;
     width: 390px;
+    padding-top: 8px;
 }
 .song_r,.song_r_internal{
     display: flex;
@@ -126,4 +127,23 @@
     height: 25px;
     object-fit: cover;
     border-radius: 10px;
+}
+.song_r span{
+    color: #1c439b;
+}
+.song_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song_r button{
+    background-color: #1c439b;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 2px;
+    width: 28px;
 }
