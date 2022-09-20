@@ -33,6 +33,10 @@
     color:#1c439b ;
     font-weight: 700;
 }
+.rev_r_n:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .rev_r_d{
     font-size: 12px;
     color:rgb(123, 123, 123) ;
@@ -41,6 +45,9 @@
     height: 15px;
     width: 120px;
     object-fit: cover;
+}
+.rev_r_r2:hover img{
+    cursor: pointer;
 }
 .rev_r_r3{
     font-size: 11px;
