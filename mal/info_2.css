@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 .info2_edit{
-    color:#1c439b ;
+    color:#2e51a2 ;
     font-weight: 400;
     font-size: 11px;
 }
@@ -50,7 +50,7 @@
     flex-direction: row;
     column-gap: 8px;
     font-size: 11px;
-    color: #1c439b;
+    color: #2e51a2;
     font-weight: 700;
     max-width: 235px ;
     line-height: 17px;
@@ -90,7 +90,7 @@
     justify-content: right;    
 }
 .info2_r4_t2,.info2_r4_t3{
-    color: #1c439b;
+    color: #2e51a2;
 }
 .info2_r4_t2:hover,.info2_r4_t3:hover{
     text-decoration: underline;
@@ -129,14 +129,14 @@
     border-radius: 10px;
 }
 .song_r span{
-    color: #1c439b;
+    color: #2e51a2;
 }
 .song_link:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 .song_r button{
-    background-color: #1c439b;
+    background-color: #2e51a2;
     font-weight: 700;
     color: white;
     border: none;

@@ -23,13 +23,13 @@
 .news_right_r1{
     font-size: 12px;
     font-weight: 700;
-    color: #1c439b;
+    color: #2e51a2;
 }
 .news_right_r2{
     line-height: 17px;
 }
 .news_right_r2 span,.news_right_r3 span{
-    color: #1c439b;
+    color: #2e51a2;
 }
 .news_right_r1:hover,.news_r3_blue:hover{
     text-decoration: underline;

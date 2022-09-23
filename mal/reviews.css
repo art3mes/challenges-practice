@@ -31,7 +31,7 @@
     font-size: 12px;
 }
 .rev_r_n{
-    color:#1c439b ;
+    color:#2e51a2 ;
     font-weight: 700;
 }
 .rev_r_n:hover{
@@ -80,7 +80,7 @@
     align-items: center;
 }
 .rev_number:hover, .rev_r_r4_1:hover div, .rev_r_r4_right:hover img{
-    color: #1c439b;
+    color: #2e51a2;
     cursor: pointer;
 }
 .rev_r_r4_right img{

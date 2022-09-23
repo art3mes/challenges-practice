@@ -58,11 +58,11 @@
     padding-bottom: 5px;
     padding-left: 3px;
     padding-top: 5px;
-    color:  #1c439b;
+    color:  #2e51a2;
     
 }
 .content:hover{
-    background-color: #1c439b;
+    background-color: #2e51a2;
     color: white;
     cursor: pointer;
 }
@@ -106,7 +106,7 @@
     color: black;
 }
 .bluec{
-    color:#1c439b;
+    color:#2e51a2;
 }
 .bluec p{
     display: inline-block;
@@ -118,6 +118,6 @@
 .sidebar_r6 p{
     display: inline-block;
     font-size: 12px;
-    color: #1c439b;
+    color: #2e51a2;
 }
 

@@ -8,24 +8,24 @@
     flex-direction: row;
     font-size: 11px;
     column-gap: 6px;
-    color: #1c439b;
+    color: #2e51a2;
     padding-top: 8px;
     margin-left: 5px;
     padding-bottom: 3px;
     border-bottom-style: solid;
     border-width: 1px;
-    border-color: #1c439b;
+    border-color: #2e51a2;
 }
 .info_r1 div{
     padding: 3px 3px 2px 3px;
     transition: background-color 0.1s;
 }
 .r1_head_active{
-    background-color: #1c439b;
+    background-color: #2e51a2;
     color: white;
 }
 .r1_head:hover{
-    background-color: #1c439b;
+    background-color: #2e51a2;
     color: white;
     cursor: pointer;
 
@@ -38,7 +38,7 @@
     margin-left: 5px;
     font-size: 11px;
     column-gap: 5px;
-    color: #1c439b;
+    color: #2e51a2;
     
 
 }
@@ -84,7 +84,7 @@
 }
 
 .score_blue{
-    background-color: #1c439b;
+    background-color: #2e51a2;
     color: white;
     font-size: 9px;
     font-weight: 400;
@@ -133,7 +133,7 @@
     column-gap: 10px;
 }
 .rank_r2 div{
-    color: #1c439b;
+    color: #2e51a2;
     font-size: 10px;
 }
 .bord:hover{
@@ -221,12 +221,12 @@
     cursor: pointer;
 }
 .bluet1,.bluet2{
-    color: #1c439b;
+    color: #2e51a2;
 
 }
 .bluet1 img{
     padding-left: 10px;
-    border-color: #1c439b;
+    border-color: #2e51a2;
 }
 .bluet1 img,.bluet2 img{
     width: 8px;
@@ -263,7 +263,7 @@
     color: #b25959;
 }
 .listpublic span{
-    color: #1c439b;
+    color: #2e51a2;
     font-size: 11px;
     
 }
