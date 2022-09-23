@@ -163,11 +163,13 @@
 .info_r3_right_button{
     display: flex;
     position: absolute;
+    top: 60px;
+    left: 72.5px;
     
 }
 .info_r3_right_button button{
     border-color: white;
-    background-color:transparent;
+    background-color:rgba(26, 24, 24, 0.6);
     color: white;
     border-radius: 4px;
     border-style: solid;
@@ -177,6 +179,7 @@
     padding: 3px 6px 3px 6px;
     border-width: 1px;
     font-size: 11px;
+
     
 }
 .r3_rate{
