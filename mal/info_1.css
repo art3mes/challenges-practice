@@ -158,7 +158,11 @@
 .info_r3_right{
    
     position: relative;
-    
+    transition: opacity 0.3s;
+}
+.info_r3_right:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 .info_r3_right_button{
     

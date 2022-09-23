@@ -64,3 +64,9 @@
     object-fit: cover;
     padding-top: 2px;
 }
+.cv_body_r_pic:hover,.cv_body_r_name:hover{
+    cursor: pointer;
+}
+.cv_body_r_name:hover{
+    text-decoration: underline;
+}
