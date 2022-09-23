@@ -155,6 +155,30 @@
     width: 210px;
     height: 143px;
 }
+.info_r3_right{
+    display: flex;
+    position: relative;
+    
+}
+.info_r3_right_button{
+    display: flex;
+    position: absolute;
+    
+}
+.info_r3_right_button button{
+    border-color: white;
+    background-color:transparent;
+    color: white;
+    border-radius: 4px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px 3px 6px;
+    border-width: 1px;
+    font-size: 11px;
+    
+}
 .r3_rate{
     background-color:rgb(246, 246, 246);
     display: flex;
