@@ -156,12 +156,12 @@
     height: 143px;
 }
 .info_r3_right{
-    display: flex;
+   
     position: relative;
     
 }
 .info_r3_right_button{
-    display: flex;
+    
     position: absolute;
     top: 60px;
     left: 72.5px;
@@ -178,9 +178,21 @@
     justify-content: center;
     padding: 3px 6px 3px 6px;
     border-width: 1px;
-    font-size: 11px;
-
+    font-size: 11px;    
+}
+.info_r3_right_bottom{
+    position: absolute;
+    bottom: 3px;
+    font-size: 13px;
+    padding: 20px 0px 5px 5px;
+    font-weight: 400;
+    color: white;
+    line-height: 15px;
     
+    background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0), black);
+    width: 205px;
+    text-shadow: 1px 0.5px #000000; ;
+
 }
 .r3_rate{
     background-color:rgb(246, 246, 246);
