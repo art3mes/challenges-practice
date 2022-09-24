@@ -1,7 +1,6 @@
 .info_1{
     display: flex;
     flex-direction: column;
-   
 }
 .info_r1{
     display: flex;
@@ -28,7 +27,6 @@
     background-color: #2e51a2;
     color: white;
     cursor: pointer;
-
 }
 
 .info_r2{
@@ -39,26 +37,22 @@
     font-size: 11px;
     column-gap: 5px;
     color: #2e51a2;
-    
-
 }
 .info_r2_header:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-
 .info_r3_left{
     display: flex;
     flex-direction: column;
     row-gap: 9px;
 }
-.info_r3{                   /*from here */
+.info_r3{                   
     display: flex;
     flex-direction: row;
     padding-top: 22px;
     padding-left: 5px;
     column-gap: 15px;
-    
 }
 .r3_scores{
     background-color:rgb(246, 246, 246);
@@ -69,7 +63,6 @@
     border-width: 1px;
     box-shadow: inset 1px 1px 1px 0px  rgba(0,0,0,0.02);
     padding-right: 60px;
-
 }
 .score{
     display: flex;
@@ -82,7 +75,6 @@
     margin: 15px 0px 12px 8px;
     padding-right: 15px;
 }
-
 .score_blue{
     background-color: #2e51a2;
     color: white;
@@ -103,8 +95,7 @@
     font-weight: bold;
     font-size: 21px;
     display: flex;
-    padding-top: 5px;
-    
+    padding-top: 5px;  
 }
 .score_user{
     font-size: 9px;
@@ -150,13 +141,11 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
 .info_r3_right img{
     width: 210px;
     height: 143px;
 }
-.info_r3_right{
-   
+.info_r3_right{ 
     position: relative;
     transition: opacity 0.3s;
 }
@@ -164,12 +153,10 @@
     cursor: pointer;
     opacity: 0.8;
 }
-.info_r3_right_button{
-    
+.info_r3_right_button{ 
     position: absolute;
     top: 60px;
     left: 72.5px;
-    
 }
 .info_r3_right_button button{
     border-color: white;
@@ -192,26 +179,21 @@
     font-weight: 400;
     color: white;
     line-height: 15px;
-    
     background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0), black);
     width: 205px;
-    text-shadow: 1px 0.5px #000000; ;
-
+    text-shadow: 1px 0.5px #000000; 
 }
 .r3_rate{
     background-color:rgb(246, 246, 246);
     display: flex;
     flex-direction: row;
-    
     border-style: solid;
     border-color: rgb(204, 204, 204);
     border-width: 1px;
     box-shadow: inset 1px 1px 1px 0px  rgba(0,   0,0,0.02);
     font-size: 11px;
-    
 }
 .r3_rate div{
-    
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
@@ -226,7 +208,6 @@
 }
 .bluet1,.bluet2{
     color: #2e51a2;
-
 }
 .bluet1 img{
     padding-left: 10px;
@@ -236,7 +217,6 @@
     width: 8px;
     height: 10px;
     margin-top: 3px;
-
 }
 .bluet2,.bluet3{
     border-color: rgb(188, 188, 188);
@@ -269,7 +249,6 @@
 .listpublic span{
     color: #2e51a2;
     font-size: 11px;
-    
 }
 .listpublic:hover span{
     cursor: pointer;
