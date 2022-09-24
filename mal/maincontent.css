@@ -501,6 +501,9 @@
     height: 50px;
     object-fit: cover;
 }
+.rev_r_icon:hover img{
+    cursor: pointer;
+}
 .rev_r_right{
     display: flex;
     flex-direction: column;
@@ -611,6 +614,9 @@
 }
 .news_date{
     color:rgb(139, 139, 139) ;
+}
+.news_left:hover img{
+    cursor: pointer;
 }
 
 /* DISCUSSIONS*/
