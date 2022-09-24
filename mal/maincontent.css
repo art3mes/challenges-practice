@@ -1,3 +1,5 @@
+/*TOP BAR OF MAIN CONTENT*/
+
 .info_1{
     display: flex;
     flex-direction: column;
@@ -28,7 +30,7 @@
     color: white;
     cursor: pointer;
 }
-
+/*SECOND BAR OF MAINCONTENT*/
 .info_r2{
     display: flex;
     flex-direction: row;
@@ -42,6 +44,7 @@
     text-decoration: underline;
     cursor: pointer;
 }
+/*RATINGS*/
 .info_r3_left{
     display: flex;
     flex-direction: column;
@@ -145,6 +148,10 @@
     width: 210px;
     height: 143px;
 }
+
+
+
+
 .info_r3_right{ 
     position: relative;
     transition: opacity 0.3s;
@@ -253,4 +260,224 @@
 .listpublic:hover span{
     cursor: pointer;
     text-decoration: underline;
+}
+
+/*SYNOPSIS + BACKGROUND*/
+.info_2{
+    display: flex;
+    flex-direction: column;
+    padding-top:25px;
+    margin-left: 6px;
+}
+.info2_r1{
+    margin-bottom: 20px;
+}
+.info2_head{
+    font-weight: 700;
+    font-size: 12px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info2_edit{
+    color:#2e51a2 ;
+    font-weight: 400;
+    font-size: 11px;
+}
+.info2_edit:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.info2_text,.info2_t {
+    padding-top: 6px;
+    display: inline-block;
+    color: black;
+    font-size: 11px;
+}
+.info2_r2 .info2_text{     /* .info2_t is of info2_r4*/
+    padding-bottom: 15px;
+}
+.info2_r2 {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color:rgb(224, 224, 224);
+    margin-bottom: 55px;
+}
+
+/*MAL X JAPAN + RELATED ANIME*/
+.malxjapan_content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    font-size: 11px;
+    color: #2e51a2;
+    font-weight: 700;
+    max-width: 235px ;
+    line-height: 17px;
+    margin-bottom: 50px; 
+}
+.malxjapan_content_container img{
+    padding-top: 5px;
+    width:235px ;
+    height: 146px;
+    object-fit: cover;
+}
+.malxjapan_content_container{
+    transition: opacity 0.1s, text-decoration 0.1s;
+}
+.malxjapan_content_container:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.info2_r4{
+    display: flex;
+    flex-direction: column;
+}
+.info2_t{
+    display: flex;
+    flex-direction: row;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    padding-bottom: 3px;
+}
+.info2_r4_t1{
+    display: flex;   
+    width: 120px;
+    justify-content: right;    
+}
+.info2_r4_t2,.info2_r4_t3{
+    color: #2e51a2;
+}
+.info2_r4_t2:hover,.info2_r4_t3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*CHARACTERS AND VOICE ACTORS + STAFF + OPENING THEMES */
+.charvoi,.staff{
+    margin-left: 5px;
+    padding-top: 25px;
+}
+.cv_body{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-left: 7px;
+}
+.cv_body_c1,.cv_body_c2{
+    display: flex;
+    flex-direction: column; 
+}
+.cv_body_r1,.cv_body_r2{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    width: 380px;
+    justify-content: space-between; 
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(188, 188, 188);
+}
+.cv_body_r2{
+    border-color: rgb(188, 188, 188);
+    background-color:rgb(246, 246, 246);
+    box-shadow: inset 1px 1px 1px 0px  rgba(0,0,0,0.02);
+}
+.cv_body_r_L,.cv_body_r_R{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+}
+.cv_body_r_L_text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-top: 2px;
+    justify-content: right;
+}
+.cv_body_r_name{
+    font-size: 11px;
+    color: #2e51a2;
+}
+.cv_body_r_L_name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cv_body_r_pos,.cv_body_right_pos{
+    font-size: 9px;
+}
+.cv_body_right_pos{
+    display: flex;
+    justify-content: right;
+}
+.cv_body_r_pic{
+    width: 44px;
+    height: 64px;
+    object-fit: cover;
+    padding-top: 2px;
+}
+.cv_body_r_pic:hover,.cv_body_r_name:hover{
+    cursor: pointer;
+}
+.cv_body_r_name:hover{
+    text-decoration: underline;
+}
+
+.song{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-left: 5px;
+    padding-top: 35px;
+}
+.song_rows{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 390px;
+    padding-top: 8px;
+}
+.song_r,.song_r_internal{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2px;
+    column-gap: 7px;
+}
+.song_r_internal{
+    justify-content: left;
+}
+.song_r img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.song_r span{
+    color: #2e51a2;
+}
+.song_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song_r button{
+    background-color: #2e51a2;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 2px;
+    width: 28px;
 }
