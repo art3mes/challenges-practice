@@ -10,7 +10,8 @@
     justify-content: center;
     width: 100%;
     height: 68px;
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(33, 27, 27, 0.35);
+    position: absolute;
     
 }
 .header-c-element{
@@ -35,7 +36,12 @@
     background-color:#3577ff;
     padding: 10px 17px 10px 17px;
     border-radius: 7px;
+    box-shadow: 1px 1px 1px rgba(8, 150, 230,0.3);0 0 0 rgb(8 150 230 / 60%);
 }
+.header-c1{
+    margin-left: 130px;
+}
+
 .header-c1,.header-c2{
     display: flex;
     flex-direction: row;
