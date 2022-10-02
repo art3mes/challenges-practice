@@ -122,3 +122,34 @@
     line-height: 20px;
     color: #404e5c;
 }
+.addtolist{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: right;
+    background-color: #12acfd;
+    color: white;
+    font-size: 14px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.arrow-container{
+    background-color: #32b8fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35px;
+    border-bottom-right-radius:3px;
+    border-top-right-radius: 3px;
+}
+.arrow-container img{
+    height: 15px;
+    width: 15px;
+}
+.anime-pic-row-container{
+    display: flex;
+    flex-direction: row;
+}
