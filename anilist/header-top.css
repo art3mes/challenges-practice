@@ -189,4 +189,12 @@
     right: 292px;
     color: #26343f;
     font-size: 13px;
+    
+}
+.categories-element{
+    transition: color 0.1s;
+}
+.categories-element:hover{
+    cursor: pointer;
+    color: #12acfd;
 }
