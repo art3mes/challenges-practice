@@ -104,10 +104,10 @@
 
 .anime-pic-container{
     position: absolute;
-    box-shadow: 0px 2px 20px  rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 20px  rgba(63, 115, 205, 0.2);
     height: 303px;
-    top: -104px;
-    left: 241px;
+    top: -107px;
+    left: 246px;
 }
 .anime-pic{
     height: 303px;
