@@ -121,7 +121,7 @@
     position:absolute;
     column-gap: 15px;
     bottom:6px;
-    left: 241px;
+    left: 248px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -197,4 +197,7 @@
 .categories-element:hover{
     cursor: pointer;
     color: #12acfd;
+}
+.addtolist:hover,.heart:hover{
+    cursor: pointer;
 }
