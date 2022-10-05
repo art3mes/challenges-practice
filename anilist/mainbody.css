@@ -1,7 +1,7 @@
 .mainbody{
     background-color: #e4eaf1;
     width: 100%;
-    height: 600px;
+    
     margin-top: -139px;
     display: flex;
     flex-direction: row;
@@ -9,10 +9,34 @@
 }
 .heading{
     color: #26343F;
+    font-size: 12px;
+    font-weight: 500;
 }
 .mainbody-c1-r1,.mainbody-c1-r2{
     background-color: white;
     padding: 8px 12px;
     border-radius: 2px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.mainbody-c1-r3{
+    display: grid;
+    grid-template-columns: 200px;
+    row-gap: 10px;
+}
+.mainbody-c1-r3-heading{
+    font-size: 13px;
+    color: #26343F;
+    font-weight: 500;
+}
+.mainbody-c1-r3-content{
+    color: #516170;
+    font-size: 12px;
+    font-weight: 400;
+}
+.mainbody-c1-r3-r{
+    background-color:lightblue;
+    line-height: 22px;
 }
