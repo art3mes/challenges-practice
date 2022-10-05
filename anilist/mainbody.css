@@ -13,7 +13,7 @@
     font-weight: 500;
 }
 .mainbody-c1-r1,.mainbody-c1-r2{
-    background-color: white;
+    background-color: #fbfbfb;
     padding: 8px 12px;
     border-radius: 2px;
     display: flex;
@@ -25,7 +25,13 @@
     display: grid;
     grid-template-columns: 200px;
     row-gap: 10px;
+    background-color: #fbfbfb;
+    margin-top: 16px;
+    padding: 18px;
+    padding-bottom: 30px;
+    border-radius: 2px;
 }
+
 .mainbody-c1-r3-heading{
     font-size: 13px;
     color: #26343F;
@@ -35,8 +41,97 @@
     color: #516170;
     font-size: 12px;
     font-weight: 400;
+    line-height: 16px;
+    display: flex;
+    width: fit-content;
 }
 .mainbody-c1-r3-r{
-    background-color:lightblue;
     line-height: 22px;
+}
+#blue{
+    transition: color 0.13s;
+}
+#blue:hover{
+    color:#12acfd;
+    cursor: pointer;
+}
+.mainbody-c1-r4-heading,.mainbody-c1-r5-heading{
+    font-size: 14px;
+    color: #26343F;
+    font-weight: 500;
+    padding: 20px 0 15px 0px;
+}
+.mainbody-c1-r4{
+
+}
+.mainbody-c1-r4-r{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fbfbfb;
+    align-items: center;
+    padding: 5px 8px 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.mainbody-c1-r4-r-left{
+    font-size: 13px;
+    color: #26343f;
+}
+.mainbody-c1-r4-r-right{
+    font-size: 12px;
+    color: #516170;
+}
+.mainbody-c1-r4-bottom button{
+    color: #26343F;
+    font-size: 12px;
+    border: none;
+    background-color: #e4eaf1 ;
+    padding: 0;
+    
+    transition: color 0.13s;
+}
+.mainbody-c1-r4-bottom:hover button{
+    color: #ec294b;
+    cursor: pointer;
+    
+}
+#spoiler{
+    color: #ec294b;
+    font-weight: 500;
+}
+.mainbody-c1-r5{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.mainbody-c1-r5-r{
+    display: flex;
+    flex-direction: row;
+    background-color: #fbfbfb;
+    display: flex;
+    border-radius: 6px;
+    
+}
+.mainbody-c1-r5-r-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbody-c1-r5-r-left img{
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    border-radius: 7px;
+    padding: 3px;
+    
+}
+.mainbody-c1-r5-r-right{
+    font-size: 13px;
+    font-weight: 500;
+    color: #26343f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
