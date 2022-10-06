@@ -275,7 +275,7 @@
     line-height: 18px;
 }
 
-.charvoi,.staff{
+.mainbody-chars{
     margin-left: 5px;
     padding-top: 25px;
 }
@@ -332,7 +332,7 @@
     display: flex;
     justify-content: right;
 }
-.cv_body_r_pic{
+.cv_body_r_pic img{
     width: 44px;
     height: 64px;
     object-fit: cover;
