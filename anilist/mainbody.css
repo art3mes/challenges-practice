@@ -162,7 +162,7 @@
 .mainbody-c2-relation{
     
 }
-.mainbody-rel-heading{
+.mainbody-heading{
     font-size: 14px;
     color: #26343f;
     font-weight: 500;
@@ -274,3 +274,74 @@
     justify-content: right;
     line-height: 18px;
 }
+
+.charvoi,.staff{
+    margin-left: 5px;
+    padding-top: 25px;
+}
+.cv_body{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-left: 7px;
+}
+.cv_body_c1,.cv_body_c2{
+    display: flex;
+    flex-direction: column; 
+}
+.cv_body_r1,.cv_body_r2{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    width: 380px;
+    justify-content: space-between; 
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(188, 188, 188);
+}
+.cv_body_r2{
+    border-color: rgb(188, 188, 188);
+    background-color:rgb(246, 246, 246);
+    box-shadow: inset 1px 1px 1px 0px  rgba(0,0,0,0.02);
+}
+.cv_body_r_L,.cv_body_r_R{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+}
+.cv_body_r_L_text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-top: 2px;
+    justify-content: right;
+}
+.cv_body_r_name{
+    font-size: 11px;
+    color: #2e51a2;
+}
+.cv_body_r_L_name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cv_body_r_pos,.cv_body_right_pos{
+    font-size: 9px;
+}
+.cv_body_right_pos{
+    display: flex;
+    justify-content: right;
+}
+.cv_body_r_pic{
+    width: 44px;
+    height: 64px;
+    object-fit: cover;
+    padding-top: 2px;
+}
+.cv_body_r_pic:hover,.cv_body_r_name:hover{
+    cursor: pointer;
+}
+.cv_body_r_name:hover{
+    text-decoration: underline;
+}
+
