@@ -294,11 +294,12 @@
 .cv_body_r{
     display: flex;
     flex-direction: row;
-    
+    height: 82px;
     width: 380px;
     background-color: #fbfbfb;
     justify-content: space-between; 
     border:none;
+    border-radius: 4px;
 }
 .cv_body_r_L,.cv_body_r_R{
     display: flex;
@@ -315,10 +316,7 @@
     font-size: 12px;
     color: #26343f;
 }
-.cv_body_r_L_name:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 .cv_body_r_pos,.cv_body_right_pos{
     font-size: 11px;
     color: #516170;
@@ -327,16 +325,14 @@
     display: flex;
     justify-content: right;
 }
-.cv_body_r_pic img{
+.cv_body_r_pic img,.cv_body_r_picR img{
     width: 60px;
-    height: 81px;
+    height: 82px;
     object-fit: cover;
-    
+    border-radius: 4px 0 0 4px;
 }
-.cv_body_r_pic:hover,.cv_body_r_name:hover{
-    cursor: pointer;
+.cv_body_r_picR img{
+    border-radius: 0 4px 4px 0;
 }
-.cv_body_r_name:hover{
-    text-decoration: underline;
-}
+
 
