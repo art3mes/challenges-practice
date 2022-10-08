@@ -348,3 +348,9 @@
 .mainbody-staff .cv_body_r{
     height: 71px;
 }
+.mainbody-rating{
+    display: grid;
+    grid-template-columns: 381px 381px;
+    margin-top: 30px;
+    row-gap: 3100px;
+}
