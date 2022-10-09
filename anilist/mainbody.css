@@ -79,6 +79,11 @@
 .mainbody-c1-r4-r-left{
     font-size: 13px;
     color: #26343f;
+    transition: color 0.13s;
+}
+.mainbody-c1-r4-r-left:hover{
+    color: #02a9ff;
+    cursor: pointer;
 }
 .mainbody-c1-r4-r-right{
     font-size: 12px;
@@ -465,7 +470,7 @@
     display: grid;
     grid-template-columns: repeat(10,1fr);
     
-    padding: 0 10px 5px 10px ;
+    padding: 0 10px 1px 10px ;
 }
 .rating-graph-body-c{
     display: flex;
@@ -532,4 +537,14 @@
 }
 .mainbody-rating-graph-body:hover .rating-graph-body-c-top,.mainbody-rating-graph-body:hover .rating-graph-body-c-footer{
     opacity: 1;
+}
+.mainbody-trailor{
+    margin-top: 25px;
+}
+.trailor-body{
+    margin-top: 10px;
+}
+.trailor-body iframe{
+    border: none;
+    border-radius: 4px;
 }
