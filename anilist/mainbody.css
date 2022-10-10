@@ -551,3 +551,15 @@
 .mainbody-recom{
     margin-top: 25px;
 }
+.recom-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recom-head-right{
+    font-size: 13px;
+    color: #26343F;
+}
+.recom-head-right:hover{
+    cursor: pointer;
+}
