@@ -563,3 +563,6 @@
 .recom-head-right:hover{
     cursor: pointer;
 }
+.recom-body{
+    margin-top: 15px;
+}
