@@ -566,10 +566,24 @@
 .recom-body{
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,150px);
+    column-gap: 17px;
 }
 .recom-body-r img{
-    height: 200px;
+    height: 195px;
     object-fit: contain;
     border-radius: 4px;
+}
+.recom-body-r-text{
+    font-size: 13px;
+    font-weight: 500;
+    color: #26343F;
+    margin-top: 6px;
+    line-height: 18px;
+    transition: color 0.13s;
+}
+.recom-body-r-text:hover{
+    color: #19b2ff;
+    text-shadow:0 0 1px  #7cd3ff ;
+    cursor: pointer;
 }
