@@ -638,3 +638,55 @@
 .recom-body-r-popup-down:hover svg{
     fill:rgb(255, 131, 152);
 }
+
+.threads-reviews{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.tr-threads-body{
+    display: flex;
+    flex-direction: column;
+}
+.tr-threads-r{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+}
+.threads-r-head{
+    font-size: 14px;
+    color: #26343F;
+}
+.threads-r-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.threads-r-body-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.threads-r-body-left img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.threads-r-body-user-container{
+    color: #12acfd;
+    font-size: 13px;
+    
+}
+.threads-r-body-user-container span{
+    color: #26343F;
+}
+.threads-r-body-tag{
+    background-color: #00aaff;
+    font-size: 11px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-items:center;
+    padding: 4px 8px;
+}
