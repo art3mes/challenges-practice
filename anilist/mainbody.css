@@ -646,6 +646,7 @@
 .recom-head-right-tr{
     font-size: 12px;
     color: #404e5c;
+    
 }
 .recom-head-right-tr:hover{
     cursor: pointer;
@@ -655,6 +656,7 @@
     flex-direction: column;
     margin-top: 10px;
     row-gap: 15px;
+    position: relative;
 }
 
 .tr-threads-r{
@@ -704,3 +706,25 @@
     justify-items:center;
     padding: 4px 8px;
 }
+.threads-float{
+    display: flex;
+    flex-wrap: row;
+    color: #516170;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 13px;
+}
+.tr-float-eye, .tr-float-message{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.tr-float-eye img, .tr-float-message img{
+    height: 11px;
+    width: 13px;
+    object-fit: contain;
+}
+
