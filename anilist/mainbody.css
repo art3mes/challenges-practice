@@ -656,7 +656,7 @@
     flex-direction: column;
     margin-top: 10px;
     row-gap: 15px;
-    position: relative;
+    
 }
 
 .tr-threads-r{
@@ -666,6 +666,7 @@
     padding: 18px;
     row-gap: 12px;
     border-radius: 4px;
+    position: relative;
 }
 .threads-r-head{
     font-size: 14px;
@@ -714,6 +715,9 @@
     align-items: center;
     justify-content: center;
     column-gap: 13px;
+    position: absolute;
+    top: 11px;
+    right: 11px;
 }
 .tr-float-eye, .tr-float-message{
     display: flex;
