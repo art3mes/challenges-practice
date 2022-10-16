@@ -643,18 +643,32 @@
     display:grid;
     grid-template-columns: repeat(2,1fr);
 }
+.recom-head-right-tr{
+    font-size: 12px;
+    color: #404e5c;
+}
+.recom-head-right-tr:hover{
+    cursor: pointer;
+}
 .tr-threads-body{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    row-gap: 15px;
 }
+
 .tr-threads-r{
     display: flex;
     flex-direction: column;
     background-color: #fbfbfb;
+    padding: 18px;
+    row-gap: 12px;
+    border-radius: 4px;
 }
 .threads-r-head{
     font-size: 14px;
     color: #26343F;
+    
 }
 .threads-r-body{
     display: flex;
@@ -665,6 +679,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 10px;
 }
 .threads-r-body-left img{
     width: 25px;
@@ -689,6 +704,3 @@
     justify-items:center;
     padding: 4px 8px;
 }
-
-/*im sick
-send help*/
