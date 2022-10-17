@@ -731,4 +731,10 @@
     width: 13px;
     object-fit: contain;
 }
-
+#tr-head{
+    transition: color 0.13s;
+}
+#tr-head:hover{
+    color: #02a9ff;
+    cursor: pointer;
+}
