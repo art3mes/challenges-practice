@@ -671,7 +671,7 @@
 .threads-r-head{
     font-size: 14px;
     color: #26343F;
-    
+    transition: color 0.13s;
 }
 .threads-r-body{
     display: flex;
@@ -693,9 +693,11 @@
 .threads-r-body-user-container{
     color: #12acfd;
     font-size: 13px;
+    transition: color 0.13s;
 }
 .threads-r-body-user-container span{
     color: #26343F;
+    
 }
 .threads-r-body-tag{
     background-color: #00aaff;
@@ -734,7 +736,7 @@
 #tr-head{
     transition: color 0.13s;
 }
-#tr-head:hover{
+#tr-head:hover,.threads-r-head:hover,.threads-r-body-left:hover img,.threads-r-body-user-container:hover{
     color: #02a9ff;
     cursor: pointer;
 }
