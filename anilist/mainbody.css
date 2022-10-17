@@ -693,11 +693,11 @@
 .threads-r-body-user-container{
     color: #12acfd;
     font-size: 13px;
-    transition: color 0.13s;
+    
 }
 .threads-r-body-user-container span{
     color: #26343F;
-    
+    transition: color 0.13s;
 }
 .threads-r-body-tag{
     background-color: #00aaff;
@@ -708,6 +708,7 @@
     align-items: center;
     justify-items:center;
     padding: 4px 8px;
+    transition: color 0.13s;
 }
 .threads-float{
     display: flex;
@@ -720,6 +721,7 @@
     position: absolute;
     top: 11px;
     right: 11px;
+    
 }
 .tr-float-eye, .tr-float-message{
     display: flex;
@@ -736,7 +738,13 @@
 #tr-head{
     transition: color 0.13s;
 }
-#tr-head:hover,.threads-r-head:hover,.threads-r-body-left:hover img,.threads-r-body-user-container:hover{
+#tr-head:hover,.threads-r-head:hover,.threads-r-body-left:hover img,.threads-r-body-user-container:hover,.threads-r-body-user-container:hover span{
     color: #02a9ff;
     cursor: pointer;
 }
+.threads-r-body-tag:hover{
+    color:#516170 ;
+    cursor: pointer;
+}
+
+/*reviews*/
