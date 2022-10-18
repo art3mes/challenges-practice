@@ -642,6 +642,7 @@
 .threads-reviews{
     display:grid;
     grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
 }
 .recom-head-right-tr{
     font-size: 12px;
@@ -747,4 +748,26 @@
     cursor: pointer;
 }
 
-/*reviews*/
+.tr-reviews{
+
+}
+.rev-body{
+    display: flex;
+    flex-direction: column;
+}
+.rev-body-r{
+    display:flex;
+    flex-direction: row;
+}
+.rev-body-r img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.rev-body-r-text{
+    font-size: 14px;
+    color: #26343fe6;
+    font-style: italic;
+    background-color: #fbfbfb;
+}
