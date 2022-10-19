@@ -754,10 +754,13 @@
 .rev-body{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    row-gap: 20px;
 }
 .rev-body-r{
     display:flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 .rev-body-r img{
     height: 50px;
@@ -770,4 +773,9 @@
     color: #26343fe6;
     font-style: italic;
     background-color: #fbfbfb;
+    width:271px ;
+    line-height: 19px;
+    padding: 13px 25px 13px 15px;
+    border-radius: 3px;
+    text-align: center;
 }
