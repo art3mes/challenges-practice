@@ -643,6 +643,7 @@
     display:grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 30px;
+    margin-top: 30px;
 }
 .recom-head-right-tr{
     font-size: 12px;
@@ -749,7 +750,7 @@
 }
 
 .tr-reviews{
-
+  
 }
 .rev-body{
     display: flex;
@@ -768,14 +769,55 @@
     object-fit: cover;
     border-radius: 5px;
 }
+.rev-body-r:hover img,.tr-reviews:hover .recom-head,.rev-like:hover{
+    cursor: pointer;
+}
 .rev-body-r-text{
     font-size: 14px;
     color: #26343fe6;
     font-style: italic;
     background-color: #fbfbfb;
     width:271px ;
-    line-height: 19px;
+    line-height: 20px;
     padding: 13px 25px 13px 15px;
     border-radius: 3px;
     text-align: center;
+    position: relative;
+}
+.rev-like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration:dashed;
+    color: #516170;
+    font-style: normal;
+    font-size: 13px;
+    position: absolute;
+
+    right: 12px;
+    bottom: 6px;
+}
+.rev-like svg{
+    fill: #516170;
+    height: 11.38px;
+    width: 11.38px;
+    margin-right: 2px;
+}
+.rev-like-hover{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #26343F;
+    color: #fbfbfb;
+    padding: 4px 7px ;
+    border-radius: 5px;
+    font-size: 12px;
+    font-style: normal;
+    position: absolute;
+    width: 167px;
+    top: -38px;
+}
+.rev-like:hover .rev-like-hover{
+    display: flex;
 }
