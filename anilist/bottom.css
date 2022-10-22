@@ -12,7 +12,7 @@
 .bottom-body-left{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 13px;
 }
 .bottom-body-left-r1{
     color: #3db4f2;
@@ -22,7 +22,22 @@
 .bottom-body-left-r2{
     display: grid;
     grid-template-columns: repeat(4,25px);
+    column-gap: 15px;
+    
 }
+.bottom-body-left-c1,.bottom-body-left-c2,.bottom-body-left-c3,.bottom-body-left-c4{
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border-width: 2px;
+    border-color: #8796a6;
+    border-style: solid;
+    border-radius: 2px;
+}
+.bottom-body-left-text{
+    color: #a0b1c5;
+}
+
 .bottom-body-right{
     display: grid;
     grid-template-columns: repeat(4,178px);
