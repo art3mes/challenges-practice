@@ -1,6 +1,12 @@
+body,p{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
 .mainbody{
     background-color: #e4eaf1;
-    width: 100%;
+    
     margin-top: -139px;
     display: flex;
     flex-direction: row;
@@ -12,6 +18,9 @@
     font-size: 12px;
     font-weight: 500;
 }
+.mainbody-c1{
+    width: 208px;
+}
 .mainbody-c1-r1,.mainbody-c1-r2{
     background-color: #fbfbfb;
     padding: 8px 12px;
@@ -20,6 +29,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    
 }
 .mainbody-c1-r3{
     display: grid;
