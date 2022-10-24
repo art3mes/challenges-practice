@@ -8,7 +8,7 @@
     column-gap: 100px;
     align-items: center;
     justify-content: center;
-    width: 1520px;         /*to force full screen*/
+    min-width: 1520px;         /*to force full screen*/
     height: 68px;
     background-color: rgba(29, 29, 52,0.35);
     position: absolute;  
