@@ -189,6 +189,8 @@
 }
 .categories-element{
     transition: color 0.1s;
+    font-weight: 500;
+    color: #516170;
 }
 .categories-element:hover{
     cursor: pointer;

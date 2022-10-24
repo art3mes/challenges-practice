@@ -2,6 +2,7 @@ body,p{
     padding:0;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    min-width: 1520px;  /*to force full screen*/
 }
 
 .mainbody{
