@@ -23,7 +23,6 @@
     display: grid;
     grid-template-columns: repeat(4,25px);
     column-gap: 15px;
-    
 }
 .bottom-body-left-c1,.bottom-body-left-c2,.bottom-body-left-c3,.bottom-body-left-c4{
     height: 26px;
@@ -60,7 +59,6 @@
     display: flex;
 }
 .bottom-body-left-text{
-    
     position:absolute;
     left: 2px;
     bottom: -1px;
@@ -91,8 +89,6 @@
     top: -1px;
     left: -1px;
 }
-
-
 .bottom-body-right{
     display: grid;
     grid-template-columns: repeat(4,178px);
