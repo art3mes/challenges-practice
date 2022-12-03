@@ -18,18 +18,16 @@
     flex-shrink: none;
     
     position:fixed;
-    top:0;
-    left:0;
-    right: 0;
+    inset: 0;
     z-index: 99;
     }
    .header-right{
     display: flex;
     flex-direction: row;
-    column-gap: 25px;
+    column-gap: 2rem;
     align-items: center;
-    padding-left: 25px;
-    padding-top: 10px;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
    }
    .header-right img{
     cursor: pointer;
@@ -44,9 +42,9 @@
    .header-left{
     display: flex;
     flex-direction: row;
-    column-gap: 25px;
-    margin-right: 24px;
-    padding-top: 10px;
+    column-gap: 1.5rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
    }
    .header-left img{
     cursor: pointer;
