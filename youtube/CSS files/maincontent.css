@@ -8,42 +8,42 @@
 }
 @media (max-width: 3130px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(9,1fr);
     }
 }
 @media (max-width: 2830px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(8,1fr);
     }
 }
 @media (max-width: 2530px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(7,1fr);;
     }
 }
 @media (max-width: 2230px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(6,1fr);;
     }
 }
 @media (max-width: 1930px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5,1fr);;
     }
 }
 @media (max-width: 1730px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns:repeat(4,1fr);;
     }
 }
 @media (max-width:1350px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3,1fr);;
     }
 }
 @media (max-width: 1130px){
     .main-content-container{
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: repeat(2,1fr); ;
     }
 }
 @media (max-width: 830px){
