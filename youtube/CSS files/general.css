@@ -10,10 +10,14 @@ p{
     margin: 0;
     padding: 0;
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;  
 }
-::-webkit-scrollbar-thumb {  
+body::-webkit-scrollbar-thumb {  
+    visibility: hidden;
     border-radius: 10px;
     background: rgb(111, 111, 111);  
+}
+body:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
 }
