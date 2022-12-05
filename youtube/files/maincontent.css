@@ -1,6 +1,6 @@
 .main-content-container{
     margin-top: 135px;
-    margin-left:260px;
+    margin-left:260px; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1px;
