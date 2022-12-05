@@ -5,6 +5,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1px;
     row-gap: 35px;
+    transition: margin-left 0.4s;
 }
 @media (max-width: 3130px){
     .main-content-container{

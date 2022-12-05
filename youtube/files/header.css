@@ -56,6 +56,14 @@
     width: 19px;
     cursor: pointer;
    }
+   .hamburger-menu-button{
+    background-color: rgb(33,33,33);
+    border-style: solid;
+    border-radius: 3px;
+    padding-top: 4px;
+    border-color: rgb(33, 33, 33);
+    transition: border-color 0.4s
+   }
    .youtube-logo{
     height: 22px;
     width: 95px;

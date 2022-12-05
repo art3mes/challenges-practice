@@ -16,6 +16,7 @@
     padding-bottom:11px;
     z-index: 99;
     overflow-x: auto;
+    transition: left 0.4s;
 }
 .subheader-button{
     font-size: 14px;

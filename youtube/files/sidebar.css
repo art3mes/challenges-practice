@@ -12,6 +12,7 @@
     z-index: 100;
     background-color: rgb(33, 33, 33);
     overflow: auto;
+    transition: width 0.4s;
 }
 .sidebar::-webkit-scrollbar {
     width: 10px;
