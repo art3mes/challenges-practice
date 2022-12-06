@@ -132,7 +132,7 @@ p{
     background-color: #E1E7F5;
     color: black;
 }
-.text:hover .dropdown_right,.cate_but:hover .dropdown{
+.text:hover .dropdown_right{
     display: flex;
 }
 .dropdown_right{
@@ -193,12 +193,7 @@ p{
     font-size: 11px
 }
 .cate_but:hover{
-    border: solid;
-    border-width: 1px;
-    padding-right: 4px;
-    padding-left: 7px;
-    height: 24px;
-    cursor: default;
+    cursor: pointer;
 }
 .dropdown{
     display:none;
@@ -218,11 +213,6 @@ p{
 }
 .dropdown div{ 
     padding: 1px 0 1px 10px;
-}
-.dropdown div:hover {
-    background-color: rgb(25, 156, 200);
-    color: white;
-    cursor: default;
 }
 .sear{
     position: relative;
