@@ -9,3 +9,8 @@ function right_dropdown_toggler(){
         document.querySelector(".cate_but").lastElementChild.style.display="none";
     }
 }
+document.onclick = function(event) {
+    if (!event.target.matches('.cate_but')) {
+        document.querySelector(".cate_but").lastElementChild.style.display="none";
+    }
+  }
