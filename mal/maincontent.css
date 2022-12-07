@@ -200,7 +200,8 @@
     box-shadow: inset 1px 1px 1px 0px  rgba(0,   0,0,0.02);
     font-size: 11px;
 }
-.r3_rate div{
+.bluet1,.bluet2,.bluet3{
+    position:relative;
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
@@ -243,6 +244,21 @@
 }
 .bluet3:hover img{
     cursor: pointer;
+}
+.bluet1_drop{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5px;
+    position: absolute;
+    left: -1px;
+    top: 22.5px;
+    padding:2px 6px;
+    border-left-style: solid;
+    border-width: 1px;
+    background-color:white ;
+    width: 92px;
+    box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 .listpublic{
     padding-left: 4px;
