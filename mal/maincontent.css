@@ -245,7 +245,7 @@
 .bluet3:hover img{
     cursor: pointer;
 }
-.bluet1_drop{
+.bluet1_drop,.bluet2_drop{
     display: flex;
     flex-direction: column;
     row-gap: 0.5px;
@@ -259,6 +259,13 @@
     width: 92px;
     box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
     border-radius: 1px;
+    line-height: 13px;
+}
+.bluet2_drop{
+    padding:2px 0 2px 25px;
+    width: 117px;
+    border-style: solid;
+    border-color: gray;
 }
 .listpublic{
     padding-left: 4px;
