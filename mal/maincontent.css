@@ -258,7 +258,7 @@
     background-color:white ;
     width: 92px;
     box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
+    border-radius: 1px;
 }
 .listpublic{
     padding-left: 4px;
