@@ -246,7 +246,7 @@
     cursor: pointer;
 }
 .bluet1_drop,.bluet2_drop{
-    display: flex;
+    
     flex-direction: column;
     row-gap: 0.5px;
     position: absolute;
@@ -260,6 +260,7 @@
     box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
     border-radius: 1px;
     line-height: 13px;
+    display: none;
 }
 .bluet2_drop{
     padding:2px 0 2px 25px;
