@@ -1,4 +1,4 @@
-function right_dropdown_toggler(){
+function right_dropdown_handler(){
     var displayValue=document.querySelector(".cate").lastElementChild.style.display;
 
     if(displayValue==="none")
