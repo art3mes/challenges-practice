@@ -50,3 +50,5 @@ document.onclick = function(event) {
         document.querySelector(".bluet2_drop").style.display="none";
     }
 }
+
+//selection in dropdown
