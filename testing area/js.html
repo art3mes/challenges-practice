@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="js.js"></script>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3b86ff;
+            z-index: 1;
+            min-width: 150px;
+          }
+          
+          .dropdown-content a {
+            padding: 14px 16px;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          .show {
+            display: block;
+          }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <a href='#' class="nav-link dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+      
+      
+      <div class="dropdown">
+        <a href='#' class="nav-link dropbtn">Dropdown2</a>
+        <div class="dropdown-content">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+</body>
+</html>

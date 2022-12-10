@@ -742,3 +742,7 @@
 .disc_us:hover,.disc_lol:hover,.disc_user:hover,.disc_topic:hover{
     text-decoration: underline;
 }
+
+.show{
+    display: flex;
+}
