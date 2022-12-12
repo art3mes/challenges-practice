@@ -207,6 +207,8 @@
     border-radius: 3px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     column-gap: 12px;
     margin: 7px 0px 7px 8px;
     padding: 3px 7px 3px 7px;
@@ -214,6 +216,10 @@
 }
 .bluet1,.bluet2{
     color: #2e51a2;
+    width: 100px;
+}
+.bluet2{
+    width: 130px;
 }
 .bluet1 img{
     padding-left: 10px;

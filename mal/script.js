@@ -29,7 +29,7 @@ function scoreColorToggle(event){
   } */
   if(scoreTextHolder=== "On-Hold")
   {
-    document.querySelector(".bluet1").style.color="rgb(239, 239, 92)";
+    document.querySelector(".bluet1").style.color="#e5de00";
   }
   if(scoreTextHolder=== "Dropped")
   {
@@ -39,8 +39,9 @@ function scoreColorToggle(event){
   {
     document.querySelector(".bluet1").style.color="gray";
   }
-  
-  
 }
 
-//do coloring
+function ratingToggler(event){
+  var ratingTextHolder=event;
+  document.querySelector(".bluet2").innerText="⭐"+ratingTextHolder;
+}
