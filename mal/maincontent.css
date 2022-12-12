@@ -210,8 +210,6 @@
     column-gap: 12px;
     margin: 7px 0px 7px 8px;
     padding: 3px 7px 3px 7px;
-}
-.bluet1:hover, .bluet2:hover{
     cursor: pointer;
 }
 .bluet1,.bluet2{
@@ -252,22 +250,33 @@
     position: absolute;
     left: -1px;
     top: 22.5px;
-    padding:2px 6px;
     border-left-style: solid;
     border-width: 1px;
     background-color:white ;
-    width: 92px;
+    width: 102.5px;
     box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
     border-radius: 1px;
-    line-height: 13px;
+    line-height: 14px;
     display: none;
 }
 .bluet2_drop{
-    padding:2px 0 2px 25px;
-    width: 117px;
+    width: 142px;
     border-style: solid;
     border-color: gray;
+    line-height: 15px;
 }
+.bluet1_drop div{
+    padding-left: 7px;
+}
+.bluet2_drop div{
+    padding-left: 23px;
+}
+.bluet1_drop div:hover, .bluet2_drop div:hover{
+    cursor: pointer;
+    background-color: #2e51a2;
+    color: white;
+}
+
 .listpublic{
     padding-left: 4px;
     padding-top: 1px;

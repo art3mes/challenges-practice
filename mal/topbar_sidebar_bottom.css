@@ -209,12 +209,14 @@ p{
     min-width: 110px;
     box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
     z-index: 1;
+    line-height: 13px;
 }
 .dropdown div{ 
     padding: 1px 0 1px 10px;
 }
 .dropdown div:hover{
-    background-color: #2e51a2;      //hereeeeeeeeeeeeeeeeeeeeeeeeeeee
+    background-color: #2e51a2;
+    color: white;    
 }
 .sear{
     position: relative;
