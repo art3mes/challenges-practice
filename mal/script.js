@@ -16,4 +16,31 @@ window.addEventListener('load', function() {
     })
 }) 
 
+function scoreColorToggle(event){
+  var scoreTextHolder=event;
+  document.querySelector(".bluet1").innerText=scoreTextHolder;
+  if(scoreTextHolder=== "Watching")
+  {
+    document.querySelector(".bluet1").style.color="green";
+  }
+  /* if(scoreTextHolder=== "Completed")
+  {
+    document.querySelector(".bluet1").style.color="green";
+  } */
+  if(scoreTextHolder=== "On-Hold")
+  {
+    document.querySelector(".bluet1").style.color="rgb(239, 239, 92)";
+  }
+  if(scoreTextHolder=== "Dropped")
+  {
+    document.querySelector(".bluet1").style.color="crimson";
+  }
+  if(scoreTextHolder=== "Plan to Watch")
+  {
+    document.querySelector(".bluet1").style.color="gray";
+  }
+  
+  
+}
+
 //do coloring
