@@ -25,7 +25,7 @@ function scoreColorToggle(event){
   }
   /* if(scoreTextHolder=== "Completed")
   {
-    document.querySelector(".bluet1").style.color="green";
+    document.querySelector(".bluet1").style.color="blue";
   } */
   if(scoreTextHolder=== "On-Hold")
   {
