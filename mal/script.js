@@ -15,7 +15,6 @@ window.addEventListener('load', function() {
       }
     })
 }) 
-
 function scoreColorToggle(event){
   var scoreTextHolder=event;
   document.querySelector(".bluet1").innerText=scoreTextHolder;
@@ -40,7 +39,6 @@ function scoreColorToggle(event){
     document.querySelector(".bluet1").style.color="gray";
   }
 }
-
 function ratingToggler(event){
   var ratingTextHolder=event;
   document.querySelector(".bluet2").innerText="⭐"+ratingTextHolder;
