@@ -22,10 +22,10 @@ function scoreColorToggle(event){
   {
     document.querySelector(".bluet1").style.color="green";
   }
-  /* if(scoreTextHolder=== "Completed")
+  if(scoreTextHolder=== "Completed")
   {
-    document.querySelector(".bluet1").style.color="blue";
-  } */
+    document.querySelector(".bluet3_eps").value="24";
+  } 
   if(scoreTextHolder=== "On-Hold")
   {
     document.querySelector(".bluet1").style.color="#e5de00";
