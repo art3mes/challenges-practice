@@ -45,5 +45,24 @@ function ratingToggler(event){
 }
 
 function episodeToggler(){
-  alert("lmap");
+  document.querySelector(".bluet3_eps").removeAttribute('disabled');
+  document.querySelector(".bluet3_eps").style.backgroundColor="white";
+}
+function episodeValidator(){
+  var value=document.querySelector(".bluet3_eps").value;
+ 
+  if(!isNaN(value))
+  {
+    if(value < 0){
+      document.querySelector(".bluet3_eps").value="0";
+    }
+    if(value > 24){
+      document.querySelector(".bluet3_eps").value="24";
+    }
+  }
+  else{
+    alert("Enter Numeric Values only.");
+  }
+  document.querySelector(".bluet3_eps").style.backgroundColor="rgb(246, 246, 246)";
+  document.querySelector(".bluet3_eps").setAttribute('disabled','');
 }

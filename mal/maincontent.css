@@ -245,8 +245,21 @@
     border-radius: 10px;
     margin-left: 4px;
 }
-.bluet3:hover img{
+.bluet3:hover img,.bluet3_eps{
     cursor: pointer;
+}
+.bluet3{
+    column-gap: 0px;
+}
+.bluet3_eps{
+    font: inherit;
+    border: none;
+    width:15px;
+    text-align: right;    
+    background-color: inherit;
+}
+.bluet3_eps:focus{
+    outline: none;
 }
 .bluet1_drop,.bluet2_drop{
     

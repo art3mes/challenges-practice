@@ -260,8 +260,8 @@
                                             </div>
                                         </div>
                                         <div class="bluet3" >Episodes: 
-                                            <span onclick="episodeToggler()">
-                                                <input  class="bluet3_eps" value="0" type="text" pattern="\d*" maxlength="2" disabled>
+                                            <span onclick="episodeToggler()" >
+                                                <input  class="bluet3_eps" value="0" type="text" pattern="\d*" maxlength="2" disabled onfocusout="episodeValidator()">
                                                 /24 
                                                 <img src="thumbs/blue-plus.png">
                                             </span> 
