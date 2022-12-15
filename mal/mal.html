@@ -259,7 +259,13 @@
                                                 <div onclick="ratingToggler(this.innerHTML)">(1) Apalling</div>                                          
                                             </div>
                                         </div>
-                                        <div class="bluet3">Episodes: <span>24/24 <img src="thumbs/blue-plus.png"></span> </div>
+                                        <div class="bluet3" >Episodes: 
+                                            <span onclick="episodeToggler()">
+                                                <input  class="bluet3_eps" value="0" type="text" pattern="\d*" maxlength="2" disabled>
+                                                /24 
+                                                <img src="thumbs/blue-plus.png">
+                                            </span> 
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="info_r3_right">
