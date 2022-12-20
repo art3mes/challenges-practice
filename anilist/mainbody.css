@@ -14,7 +14,7 @@ body,p{
     justify-content: center
 }
 .heading{
-    color: #26343F;
+    color: #5c728a;
     font-size: 12px;
     font-weight: 500;
 }
@@ -42,11 +42,11 @@ body,p{
 }
 .mainbody-c1-r3-heading{
     font-size: 13px;
-    color: #26343F;
+    color: #5c728a;
     font-weight: 500;
 }
 .mainbody-c1-r3-content{
-    color: #516170;
+    color: #9299a1;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -65,7 +65,7 @@ body,p{
 }
 .mainbody-c1-r4-heading,.mainbody-c1-r5-heading{
     font-size: 14px;
-    color: #26343F;
+    color: #5c728a;
     font-weight: 500;
     padding: 20px 0 15px 0px;
 }
@@ -85,7 +85,7 @@ body,p{
 }
 .mainbody-c1-r4-r-left{
     font-size: 13px;
-    color: #26343f;
+    color: #5c728a;
     transition: color 0.13s;
 }
 .mainbody-c1-r4-r-left:hover{
@@ -94,7 +94,7 @@ body,p{
 }
 .mainbody-c1-r4-r-right{
     font-size: 12px;
-    color: #516170;
+    color: #9299a1;
 }
 .mainbody-c1-r4-bottom button{
     color: #26343F;
@@ -108,7 +108,7 @@ body,p{
     color: #ec294b;
     cursor: pointer;
 }
-#spoiler{
+.spoiler-tag{
     color: #ec294b;
     font-weight: 500;
 }
@@ -124,6 +124,7 @@ body,p{
     background-color: #fbfbfb;
     display: flex;
     border-radius: 6px;
+    transition:background-color 0.14s , color 0.14s;
 }
 .mainbody-c1-r5-r-left{
     display: flex;
@@ -144,9 +145,7 @@ body,p{
     justify-content: center;
     align-items: center;
     padding-left: 10px;
-}
-.mainbody-c1-r5-r1,.mainbody-c1-r5-r2,.mainbody-c1-r5-r3{
-    transition:background-color 0.14s;
+    color: #5c728a;
 }
 .mainbody-c1-r5-r1:hover{
     color: #119bf0;
@@ -154,14 +153,12 @@ body,p{
 }
 .mainbody-c1-r5-r2:hover{
     background-color: #38aaf0;
-    color: white;
     cursor: pointer;
 }
 .mainbody-c1-r5-r3:hover{
     background-color: #ffac2f;
-    color: white;
     cursor: pointer;
-}
+}                              /*implement color of texts when hover*/
 /*Column 2*/
 
 .mainbody-c2{
