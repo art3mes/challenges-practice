@@ -4,14 +4,12 @@ function spoiler_toggler(){
     
     for (let index = 0; index < numOfElement; index++) {
 
-        if (display === "none") {
-            document.getElementsByClassName("spoiler-body")[index].style.display="flex";
+        if (display === "flex") {
+            document.getElementsByClassName("spoiler-body")[index].style.display="none";
         }
         
         else{
-            document.getElementsByClassName("spoiler-body")[index].style.display="none";  
+            document.getElementsByClassName("spoiler-body")[index].style.display="flex";  
         }
     }
-    
-
 }
