@@ -16,3 +16,5 @@ function spoiler_toggler(){
 }
 
 //mainbody-middle-content
+
+implement js of rel-thumb-container
