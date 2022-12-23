@@ -181,9 +181,6 @@ body,p{
     column-gap: 20px;
     margin-top: 11px;
 }
-.mainbody-rel-thumb{
-    position:relative;
-}
 .rel-thumb-container{
     position: relative;
 }

@@ -1,3 +1,4 @@
+//mainbody-sidebar
 function spoiler_toggler(){
     var display=document.getElementsByClassName("spoiler-body")[0].style.display;
     var numOfElement=document.getElementsByClassName("spoiler-body").length;
@@ -13,3 +14,5 @@ function spoiler_toggler(){
         }
     }
 }
+
+//mainbody-middle-content
