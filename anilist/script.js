@@ -17,4 +17,5 @@ function spoiler_toggler(){
 
 //mainbody-middle-content
 
-implement js of rel-thumb-container
+//implement js of rel-thumb-container
+//Response: Meh. its working fine with only CSS. so im not gonna :p
