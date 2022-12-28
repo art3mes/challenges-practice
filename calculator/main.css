@@ -10,5 +10,9 @@
 }
 .calc-button-container{
     display: grid;
-    grid-template-columns:repeat(4,30px);
+    grid-template-columns:repeat(4,60px);
+}
+.calc-button{
+    width: 100%;
+    height: 40px;
 }
