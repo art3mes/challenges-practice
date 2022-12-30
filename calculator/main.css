@@ -3,10 +3,18 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+.calculator{
+    display: flex;
+    justify-content: center;  
+}
 .calculator-container{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   border-style: solid;
+   border-width: 1px;
+   width: fit-content;
+   padding: 25px;
+   border-radius: 6px;
 }
 .calc-button-container{
     display: grid;
