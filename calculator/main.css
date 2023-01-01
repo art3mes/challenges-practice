@@ -8,17 +8,17 @@
     justify-content: center; 
     align-items: center; 
     height: 100vh;
+    padding-bottom: 1000px;  /*delete this later*/
 }
 .calculator-container{
    display: flex;
    flex-direction: column;
-   border-style: solid;
-   border-width: 1px;
-   border-color: gray;
+   border-style:none;
    width: fit-content;
    height: fit-content;
    padding: 32px 27px;
    border-radius: 6px;
+   background-color: rgba(85, 237, 237,0.2);
 }
 .calc-button-container{
     display: grid;
@@ -50,5 +50,9 @@
     border-width: 1px;
     border-color: gray;
 }
-
-/*do the borders*/
+.del-but{
+    background-color: crimson;
+}
+.solve-but{
+    background-color: green;
+}
