@@ -18,9 +18,9 @@
             <input class="calc-display" type="text">
             <div class="calc-button-container">
                 <div ><button class="calc-button" onclick="operation(this)">%</button></div>
-                <div ><button class="calc-button">CE</button></div>
-                <div ><button class="calc-button">C</button></div>
-                <div ><button class="calc-button del-but">DEL</button></div>
+                <div ><button class="calc-button" onclick="editButtons(this)">CE</button></div>
+                <div ><button class="calc-button" onclick="editButtons(this)">C</button></div>
+                <div ><button class="calc-button del-but" onclick="editButtons(this)">DEL</button></div>
                 <div ><button class="calc-button" onclick="specialOperation(this)">1/x</button></div>
                 <div ><button class="calc-button" onclick="specialOperation(this)">x<sup>2</sup></button></div>
                 <div ><button class="calc-button" onclick="specialOperation(this)">x<sup>1/2</sup></button></div>
@@ -40,7 +40,7 @@
                 <div ><button class="calc-button" onclick="specialOperation(this)">+/-</button></div>
                 <div ><button class="calc-button" onclick="number(this)">0</button></div>
                 <div ><button class="calc-button" onclick="number(this)">.</button></div>
-                <div ><button class="calc-button solve-but">=</button></div>           
+                <div ><button class="calc-button solve-but" onclick="editButtons(this)">=</button></div>           
             </div>
         </div>
     </div>

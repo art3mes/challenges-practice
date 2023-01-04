@@ -11,3 +11,7 @@ function specialOperation(sOpe){
     console.log(specialOperator);
 }
 //editor buttons
+function editButtons(edit){
+    var button=edit.innerHTML;
+    console.log(button);
+}
