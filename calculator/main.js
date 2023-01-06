@@ -19,4 +19,3 @@ function editButtons(edit){
 function display(value){
     document.querySelector(".calc-display").value+=value;
 }
-//setup display
