@@ -1,3 +1,6 @@
+var c=0;   //to take value just after calculation. 0 equals empty screen
+           //1 equals previous value is there. clear it. then take new input
+
 function number(num){
     var innerValue=num.innerText;
     console.log(innerValue);
@@ -5,7 +8,14 @@ function number(num){
 }
 function operation(ope){
     var operator=ope.innerText;
-    document.querySelector(".calc-display").value+=operator;
+    if(c===0){
+        document.querySelector(".calc-display").value+=operator;
+    }
+    else{
+        c=0;
+        document.querySelector(".calc-display").value+=operator;
+    }
+    
     console.log(operator);
     
 }
@@ -25,9 +35,18 @@ function editButtons(edit){
         console.log(lenghtOfValue);
     }
     if(button==="="){
+        c=1;                            
         document.querySelector(".calc-display").value=eval(document.querySelector(".calc-display").value);
     }
 }
 function display(value){
-    document.querySelector(".calc-display").value+=value;
+    if(c===0){
+        document.querySelector(".calc-display").value+=value;
+    }
+    else{
+        c=0;
+        document.querySelector(".calc-display").value="";
+        document.querySelector(".calc-display").value+=value;
+    }
+    
 }
