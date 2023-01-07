@@ -5,7 +5,9 @@ function number(num){
 }
 function operation(ope){
     var operator=ope.innerText;
+    
     console.log(operator);
+    
 }
 function specialOperation(sOpe){
     var specialOperator=sOpe.innerText;
@@ -23,7 +25,6 @@ function editButtons(edit){
         console.log(lenghtOfValue);
     }
 }
-
 function display(value){
     document.querySelector(".calc-display").value+=value;
 }
