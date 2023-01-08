@@ -1,6 +1,5 @@
 var c=0;   //to take value just after calculation. 0 equals empty screen
            //1 equals previous value is there. clear it. then take new input
-
 function number(num){
     var innerValue=num.innerText;
     console.log(innerValue);
@@ -14,10 +13,8 @@ function operation(ope){
     else{
         c=0;
         document.querySelector(".calc-display").value+=operator;
-    }
-    
-    console.log(operator);
-    
+    }   
+    console.log(operator);   
 }
 function specialOperation(sOpe){
     var specialOperator=sOpe.innerText;
@@ -60,5 +57,4 @@ function display(value){
         document.querySelector(".calc-display").value="";
         document.querySelector(".calc-display").value+=value;
     }
-    
 }
