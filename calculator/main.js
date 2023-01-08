@@ -22,6 +22,18 @@ function operation(ope){
 function specialOperation(sOpe){
     var specialOperator=sOpe.innerText;
     console.log(specialOperator);
+    if(specialOperator==="1/x"){
+        c=1;
+        document.querySelector(".calc-display").value=1/eval(document.querySelector(".calc-display").value);
+    }
+    if(specialOperator==="x2"){
+        c=1;
+        document.querySelector(".calc-display").value=Math.pow(eval(document.querySelector(".calc-display").value),2);
+    }
+    if(specialOperator==="x1/2"){
+        c=1;
+        document.querySelector(".calc-display").value=Math.pow(eval(document.querySelector(".calc-display").value),1/2);
+    }
 }
 function editButtons(edit){
     var button=edit.innerText;
