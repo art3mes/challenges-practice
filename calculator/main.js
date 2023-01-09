@@ -3,7 +3,20 @@ var c=0;   //to take value just after calculation. 0 equals empty screen
 function number(num){
     var innerValue=num.innerText;
     console.log(innerValue);
-    display(innerValue);
+    displayNum(innerValue);
+}
+function displayNum(value){
+    if(c===0){
+        //document.querySelector(".calc-display").value+=value;
+        outputCalc(document.querySelector(".calc-display").value+value);
+    }
+    else{
+        c=0;
+        //document.querySelector(".calc-display").value="";
+        outputCalc("");
+        //document.querySelector(".calc-display").value+=value;
+        outputCalc(document.querySelector(".calc-display").value+value);
+    }
 }
 function operation(ope){
     var operator=ope.innerText;
@@ -56,19 +69,7 @@ function editButtons(edit){
         outputCalc(eval(document.querySelector(".calc-display").value));
     }
 }
-function display(value){
-    if(c===0){
-        //document.querySelector(".calc-display").value+=value;
-        outputCalc(document.querySelector(".calc-display").value+value);
-    }
-    else{
-        c=0;
-        //document.querySelector(".calc-display").value="";
-        outputCalc("");
-        //document.querySelector(".calc-display").value+=value;
-        outputCalc(document.querySelector(".calc-display").value+value);
-    }
-}
 function outputCalc(value){
     document.querySelector(".calc-display").value=value;
 }
+//add restricted number only input, +/- funtionality and display number limit
