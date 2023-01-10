@@ -73,3 +73,4 @@ function outputCalc(value){
     document.querySelector(".calc-display").value=value;
 }
 //add restricted number only input, +/- funtionality and display number limit
+//its so cold today. 
