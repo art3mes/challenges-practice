@@ -53,8 +53,18 @@ function specialOperation(sOpe){
             //document.querySelector(".calc-display").value=Math.pow(eval(document.querySelector(".calc-display").value),1/2);
             outputCalc(Math.pow(eval(document.querySelector(".calc-display").value),1/2));
         }
-    }
-    
+        if(specialOperator==="+/-"){
+            if(document.querySelector(".calc-display").value.charAt(0)=="+"){
+                console.log("plus");
+            }
+            if(document.querySelector(".calc-display").value.charAt(0)=="-"){
+                console.log("minus");
+            }
+            if(/^\d$/.test(document.querySelector(".calc-display").value.charAt(0))==true){    //checking if  a value is numeral or not
+                console.log("numbre");
+            }
+        }
+    } 
 }
 function editButtons(edit){
     var button=edit.innerText;
@@ -79,4 +89,4 @@ function outputCalc(value){
     document.querySelector(".calc-display").value=value;
 }
 //add restricted number only input, +/- funtionality and display number limit
-//its so cold today. 
+//strings are IMMUTABLE. find a way to edit string. *****
