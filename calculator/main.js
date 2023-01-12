@@ -90,3 +90,4 @@ function outputCalc(value){
 }
 //add restricted number only input, +/- funtionality and display number limit
 //strings are IMMUTABLE. find a way to edit string. *****
+home
