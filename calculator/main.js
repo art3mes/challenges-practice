@@ -85,10 +85,16 @@ function editButtons(edit){
     if(button==="="){
         c=1;                            
         //document.querySelector(".calc-display").value=eval(document.querySelector(".calc-display").value);
-        outputCalc(eval(document.querySelector(".calc-display").value));
+        var output=eval(document.querySelector(".calc-display").value);
+        outputCalc(output);
+        if(output.length>="5"){
+            output=output.substring(0,5);
+            console.log(output);
+        }
     }
 }
 function outputCalc(value){
     document.querySelector(".calc-display").value=value;
+    var length=value.length;
 }
-//add restricted number only input, +/- funtionality and display number limit
+//add restricted number only input and display number limit
