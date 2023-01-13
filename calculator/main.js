@@ -85,16 +85,19 @@ function editButtons(edit){
     if(button==="="){
         c=1;                            
         //document.querySelector(".calc-display").value=eval(document.querySelector(".calc-display").value);
-        var output=eval(document.querySelector(".calc-display").value);
-        outputCalc(output);
-        if(output.length>="5"){
-            output=output.substring(0,5);
-            console.log(output);
-        }
+        outputCalc(eval(document.querySelector(".calc-display").value));
     }
 }
 function outputCalc(value){
-    document.querySelector(".calc-display").value=value;
-    var length=value.length;
+    var output=value.toString();
+    if(output.length >=12){
+        output=output.substring(0,13);
+        document.querySelector(".calc-display").value=output;
+    }
+    else{   
+        document.querySelector(".calc-display").value=output;
+    }
+    
+
 }
 //add restricted number only input and display number limit
