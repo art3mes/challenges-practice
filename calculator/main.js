@@ -57,14 +57,12 @@ function specialOperation(sOpe){
             if(document.querySelector(".calc-display").value.charAt(0)=="+"){
                 //document.querySelector(".calc-display").value=document.querySelector(".calc-display").value.substring(1);
                 outputCalc("-"+document.querySelector(".calc-display").value.substring(1));
-                console.log("plsu");
             }
             else if(document.querySelector(".calc-display").value.charAt(0)=="-"){
                 outputCalc("+"+document.querySelector(".calc-display").value.substring(1));
-                console.log("minus");
             }
             if(/^\d$/.test(document.querySelector(".calc-display").value.charAt(0))==true){    //checking if  a value is numeral or not
-                console.log("numbre");
+                outputCalc("-"+document.querySelector(".calc-display").value.substring(0)); 
             }
         }
     } 
