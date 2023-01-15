@@ -97,6 +97,7 @@
 }
 .calc-button-container{
     display: grid;
+    row-gap: 1px;
     grid-template-columns:repeat(4,60px);
 }
 .calc-display{
@@ -106,12 +107,11 @@
     height: 48px;
     margin-bottom: 15px;
     border-radius: 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+    border-style: none;
     border-radius: 3px;
     caret-color: crimson;
     padding:0 2px 0 2px;
+    background-color: rgba(255, 255, 255,0.4);
 }
 .calc-display:focus{
     outline: none;
@@ -119,15 +119,13 @@
 .calc-button{
     width: 99%;
     height: 40px;
-    margin-bottom: 1px;
+    background-color:inherit;
     /*debug the spacing between rows*/
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+    border-style: none;
 }
 .del-but{
-    background-color: crimson;
+    background-color: #DE356A;
 }
 .solve-but{
-    background-color: green;
+    background-color: #C8FFD4;
 }
