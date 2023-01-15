@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
 }
-.wavy{                  /*set the margin of outer container of this whole dataset to remove the white margins*/
+.wavy{                 
     width: 100%;
     height: 100%;
 
@@ -130,3 +130,4 @@
 .solve-but{
     background-color: rgba(200, 255, 212,0.8);
 }
+set up hover feaatture
