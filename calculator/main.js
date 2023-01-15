@@ -95,7 +95,4 @@ function outputCalc(value){
     else{   
         document.querySelector(".calc-display").value=output;
     }
-    
-
 }
-//add restricted number only input and display number limit
