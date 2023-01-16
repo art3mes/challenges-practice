@@ -124,10 +124,18 @@
     /*debug the spacing between rows*/
     border-style: none;
 }
-.del-but{
-    background-color: #DE356A;
+.calc-button:hover{
+    background-color:rgba(240, 248, 255,0.5);
+}
+.del-but:hover{
+    background-color: rgba(222, 53, 106,0.9);
 }
 .solve-but{
-    background-color: rgba(200, 255, 212,0.8);
+    background-color: rgba(200, 255, 212,0.7);
 }
-set up hover feaatture
+.solve-but:hover{
+    background-color: rgba(200, 255, 212,1);
+}
+.op-but:hover{
+    background-color:rgba(240, 248, 255,0.7);
+}
