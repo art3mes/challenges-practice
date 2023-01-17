@@ -129,8 +129,14 @@
 .calc-button:hover{
     background-color:rgba(240, 248, 255,0.5);
 }
+.calc-button:active{
+    background-color:rgba(240, 248, 255,1);
+}
 .del-but:hover{
     background-color: rgba(222, 53, 106,0.9);
+}
+.del-but:active{
+    background-color: rgb(217, 90, 130);
 }
 .solve-but{
     background-color: rgba(200, 255, 212,0.7);
@@ -138,7 +144,12 @@
 .solve-but:hover{
     background-color: rgba(200, 255, 212,1);
 }
+.solve-but:active{
+    background-color: rgb(89, 180, 109);
+}
 .op-but:hover{
     background-color:rgba(240, 248, 255,0.7);
 }
-implement on-click function
+.op-but:active{
+    background-color:rgba(240, 248, 255,1);
+}
