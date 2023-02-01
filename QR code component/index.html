@@ -2,27 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>QR code component</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 0;
+      
+    }
+    .heading,.para{
+      font-family: 'Outfit', sans-serif;
+      text-align: center;
+      
+    }
+    .para{
+      color: hsl(211, 12%, 65%);
+      font-size: 16px;
+      margin: 20px 0 40px 0;
+    }
+    .heading{
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(219, 69%, 91%);
+      margin: fit-content;
+      height: 100vh;
+    }
+    .qr-body{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color:hsl(0, 0%, 100%) ;
+      border-radius: 1rem;
+    }
+    .qr-code img{
+      height: 300px;
+      width: 300px;
+      border-radius: 13px
+    }
+    .qr-code{
+      padding: 18px;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="container">
+      <div class="qr-body">
+        <div class="qr-code"><img  src="images/image-qr-code.png"></div>
+    
+        <div class="heading">Improve your front-end<br>skills by building projects</div>
+        <div class="para">Scan the QR to visit Frontend<br>Mentor and take your coding skills to<br>the next level</div>
+        
+      </div>
+    </div>
 </body>
 </html>
