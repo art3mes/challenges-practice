@@ -51,7 +51,24 @@
       backdrop-filter: blur(30.7742px);
       height: 86px;
       padding:0 165px 0px 123px;
-      
+    }
+    .header-right >div{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+    
+    .header-right > div:hover,.active{
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .active{
+      border-color: rgba(255, 255, 255, 1);   /*overwrite done here*/
+      pointer-events: none;                   /*dangerous property. find some other way*/
     }
     .home-body{
       display: flex;
@@ -84,6 +101,7 @@
     }
     .body-right:hover{
       box-shadow: 0px 0px 1px 60px rgba(255, 255, 255,0.15);
+      cursor:pointer;
     }
     .body-left-top{
       font-family: 'Barlow Condensed', sans-serif;
@@ -106,7 +124,7 @@
     <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
     <div class="header-mid"></div>
     <div class="header-right">
-      <div><strong>00</strong> HOME</div>
+      <div class="active"><strong>00</strong> HOME</div>
       <div><strong>01</strong> DESTINATION</div>
       <div><strong>02</strong> CREW</div>
       <div><strong>03</strong> TECHNOLOGY</div>
