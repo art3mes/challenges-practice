@@ -17,7 +17,7 @@
       background-image: url('assets/destination/background-destination-desktop.jpg');
       background-size:cover;
       color: white;
-      font-family: 'Barlow', sans-serif;
+      font-family: 'Barlow Condensed', sans-serif;
     }
     .header{
       display: flex;
@@ -59,7 +59,7 @@
       column-gap: 10px;
     }
     
-    .header-right > div:hover,.active{
+    .header-right > div:hover{
       border-bottom-style: solid;
       border-width: 2px;
       margin-top: 2px;
@@ -69,18 +69,90 @@
     .active{
       border-color: rgba(255, 255, 255, 1);   /*overwrite done here*/
       pointer-events: none;                   /*dangerous property. find some other way*/
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
     }
     .home-body{
       display: flex;
       flex-direction: row;
-      margin: 150px 0 0px 180px;
+      margin: 50px 0 0px 220px;
       position: relative;
+      column-gap: 180px;
     }
     .body-left{
-      color:  #D0D6F9;
-      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
     }
-    
+    .body-left-top{
+      color:  #D0D6F9;
+      font-size: 24px;
+      letter-spacing: 4.72px;
+      margin-left: -30px;
+    }
+    .body-left-top span{
+      opacity: 0.35;
+      mix-blend-mode: normal;
+    }
+    .body-left-bottom img{
+      height: 400px;
+      width: 400px;
+    }
+    .body-right{
+      margin-top: 40px;
+    }
+    .body-right-top{
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      height: 34px;
+    }
+    .body-right-top > div:hover{
+      border-bottom-style: solid;
+      border-width: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .body-right-mid-heading{
+      font-family: 'Bellefair', serif;
+      font-size: 100px;
+      padding: 40px 0 10px 0;
+    }
+    .body-right-mid-para{
+      font-family: 'Barlow', sans-serif;
+      font-size: 18px;
+      line-height: 32px;
+      color: #d0d6f9;
+      text-align: left;
+      width:32rem;
+      border-bottom-style: solid;
+      border-width: 1px;
+      padding-bottom: 40px;
+      border-color: #383B4B;
+    }
+    .body-right-bottom{
+      display: flex;
+      flex-direction: row;
+      column-gap: 80px;
+      padding-top: 20px;
+    }
+    .body-right-bottom-body{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .bottom-top{
+      letter-spacing: 2.36px;
+      color: #D0D6F9;
+      font-size: 14px;
+    }
+    .bottom-bottom{
+      font-family: 'Bellefair', serif;
+      font-size: 28px;
+    }
   </style>
 </head>
 <body> 
@@ -88,43 +160,40 @@
     <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
     <div class="header-mid"></div>
     <div class="header-right">
-      <div class="active"><strong>00</strong> HOME</div>
-      <div><strong>01</strong> DESTINATION</div>
+      <div ><strong>00</strong> HOME</div>
+      <div class="active"><strong>01</strong> DESTINATION</div>
       <div><strong>02</strong> CREW</div>
       <div><strong>03</strong> TECHNOLOGY</div>
     </div>
   </div>
   <div class="home-body">
       <div class="body-left">
-        <div class="body-left-top">01 PICK YOUR DESTINATION</div>
-        <div class="body-left-bottom">img</div>
+        <div class="body-left-top"><span>01</span> PICK YOUR DESTINATION</div>
+        <div class="body-left-bottom"><img src="assets/destination/image-moon.png" alt="moon"></div>
       </div>
       <div class="body-right">
         <div class="body-right-top">
-          <div>MOON</div>
-          <div>MARS</div>
+          <div class="active">MOON</div>
+          <div >MARS</div>
           <div>EUROPA</div>
           <div>TITAN</div>
         </div>
-        <div class="body-right-mid"><span>MOON</span></div>
+        <div class="body-right-mid-heading">MOON</div>
         <div class="body-right-mid-para">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
           regain perspective and come back refreshed. While you’re there, take in some history 
           by visiting the Luna 2 and Apollo 11 landing sites.
         </div>
         <div class="body-right-bottom">
-          <div class="body-right-bottom-left">
-            <div class="bottom-left-top">Avg. distance</div>
-            <div class="bottom-left-bottom">384,400 km</div>
+          <div class="body-right-bottom-body">
+            <div class="bottom-top">Avg. distance</div>
+            <div class="bottom-bottom">384,400 km</div>
           </div>
-          <div class="body-right-bottom-right">
-            <div class="bottom-right-top">Est. travel time</div>
-            <div class="bottom-right-bottom">3 days</div>
+          <div class="body-right-bottom-body">
+            <div class="bottom-top">Est. travel time</div>
+            <div class="bottom-bottom">3 days</div>
           </div>
         </div>
       </div>
-      
-   
-   
   </div> 
 </body>
 </html>
