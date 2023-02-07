@@ -85,6 +85,7 @@
       display: flex;
       flex-direction: column;
       row-gap: 0px;
+      position: relative;
     }
     .body-left-header{
       color:  #D0D6F9;
@@ -119,6 +120,32 @@
     .body-left div:not(:first-child){
       margin-left: -32px;
     }
+    .body-left-scroll{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      column-gap: 50px;
+      bottom: -6rem;
+    }
+    .body-left-scroll div{
+      width: 15px;
+      height: 15px;
+      mix-blend-mode: normal;
+      border-radius: 100%;
+      background-color: white;
+      transition: all 0.3s;
+    }
+    .body-left-scroll div:not(.scroll-active){    /*magic LMAO*/
+      opacity: 0.2;
+    }
+    .scroll-active{
+      opacity: 1;
+      pointer-events: none;
+    }
+    .body-left-scroll div:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
     .body-right{
       position: relative;
     }
@@ -151,7 +178,7 @@
             commander of Crew Dragon Demo-2.
           </div>
           <div class="body-left-scroll">
-            <div></div>
+            <div class="scroll-active"></div>
             <div></div>
             <div></div>
             <div></div>
