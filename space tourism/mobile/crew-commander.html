@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Space tourism website</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/crew/background-crew-desktop.jpg');
+      background-size:cover;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+      overflow: hidden;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin:25px 0 0 50px;
+      position: relative;
+    }
+    .header-left{
+      padding: 20px;
+    }
+    .header-mid{
+      position: absolute;
+      left: 130px;
+      border-width: 1px;
+      border-style: solid;
+      width: 520px;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+    .header-right{
+      letter-spacing: 2.7px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 3rem;
+      font-size: 19px;
+      
+      background-color: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(30.7742px);
+      height: 86px;
+      padding:0 165px 0px 123px;
+    }
+    .header-right >div{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+    
+    .header-right > div:hover{
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .active{
+      border-color: rgba(255, 255, 255, 1);   /*overwrite done here*/
+      pointer-events: none;                   /*dangerous property. find some other way*/
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+    }
+    .home-body{
+      display: flex;
+      flex-direction: row;
+      margin: 50px 0 0px 220px;
+      position: relative;
+      column-gap: 180px;
+    }
+    .body-left{
+      display: flex;
+      flex-direction: column;
+      row-gap: 0px;
+      position: relative;
+    }
+    .body-left-header{
+      color:  #D0D6F9;
+      font-size: 24px;
+      letter-spacing: 4.72px;
+      margin-left: -30px;
+    }
+    .body-left-header span{
+      opacity: 0.35;
+      mix-blend-mode: normal;
+    }
+    .body-left-top{
+      font-family: 'Bellefair', serif;
+      font-size: 32px;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      margin-top: 6rem;
+    }
+    .body-left-mid{
+      font-family: 'Bellefair', serif;
+      font-size: 56px;
+      color: white;
+      margin: 15px 0 20px 0;
+    }
+    .body-left-last{
+      line-height: 32px;
+      font-family: 'Barlow', sans-serif;
+      color: #d0d6d0;
+      font-size: 18px;
+      width: 500px;
+    }
+    .body-left div:not(:first-child){
+      margin-left: -32px;
+    }
+    .body-left-scroll{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      column-gap: 50px;
+      bottom: -6rem;
+    }
+    .body-left-scroll div{
+      width: 15px;
+      height: 15px;
+      mix-blend-mode: normal;
+      border-radius: 100%;
+      background-color: white;
+      transition: all 0.3s;
+    }
+    .body-left-scroll div:not(.scroll-active){    /*magic LMAO*/
+      opacity: 0.2;
+    }
+    .scroll-active{
+      opacity: 1;
+      pointer-events: none;
+    }
+    .body-left-scroll div:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    .body-right{
+      position: relative;
+    }
+    .body-right img{
+      height: 170%;
+      position: absolute;
+      bottom: -12.5rem;
+      left: 2.5rem;
+    }
+  </style>
+</head>
+<body> 
+  <div class="header">
+    <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
+    <div class="header-mid"></div>
+    <div class="header-right">
+      <div ><strong>00</strong> HOME</div>
+      <div ><strong>01</strong> DESTINATION</div>
+      <div class="active"><strong>02</strong> CREW</div>
+      <div><strong>03</strong> TECHNOLOGY</div>
+    </div>
+  </div>
+  <div class="home-body">
+      <div class="body-left">              
+          <div class="body-left-header"><span>02</span> MEET YOUR CREW</div>
+          <div class="body-left-top">COMMANDER</div>
+          <div class="body-left-mid">DOUGLAS HURLEY</div>
+          <div class="body-left-last">  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </div>
+          <div class="body-left-scroll">
+            <div class="scroll-active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>       
+      </div>
+      <div class="body-right"><img src="assets/crew/image-douglas-hurley.png" alt="commander"></div>
+  </div> 
+</body>
+</html>

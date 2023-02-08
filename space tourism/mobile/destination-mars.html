@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Space tourism website</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/destination/background-destination-desktop.jpg');
+      background-size:cover;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin:25px 0 0 50px;
+      position: relative;
+    }
+    .header-left{
+      padding: 20px;
+    }
+    .header-mid{
+      position: absolute;
+      left: 130px;
+      border-width: 1px;
+      border-style: solid;
+      width: 520px;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+    .header-right{
+      letter-spacing: 2.7px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 3rem;
+      font-size: 19px;
+      font-family: 'Barlow Condensed', sans-serif;
+      background-color: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(30.7742px);
+      height: 86px;
+      padding:0 165px 0px 123px;
+    }
+    .header-right >div{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+    
+    .header-right > div:hover{
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .active{
+      border-color: rgba(255, 255, 255, 1);   /*overwrite done here*/
+      pointer-events: none;                   /*dangerous property. find some other way*/
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+    }
+    .home-body{
+      display: flex;
+      flex-direction: row;
+      margin: 50px 0 0px 220px;
+      position: relative;
+      column-gap: 180px;
+    }
+    .body-left{
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    .body-left-top{
+      color:  #D0D6F9;
+      font-size: 24px;
+      letter-spacing: 4.72px;
+      margin-left: -30px;
+    }
+    .body-left-top span{
+      opacity: 0.35;
+      mix-blend-mode: normal;
+    }
+    .body-left-bottom img{
+      height: 400px;
+      width: 400px;
+    }
+    .body-right{
+      margin-top: 40px;
+    }
+    .body-right-top{
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      height: 34px;
+    }
+    .body-right-top > div:hover{
+      border-bottom-style: solid;
+      border-width: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .body-right-mid-heading{
+      font-family: 'Bellefair', serif;
+      font-size: 100px;
+      padding: 40px 0 10px 0;
+    }
+    .body-right-mid-para{
+      font-family: 'Barlow', sans-serif;
+      font-size: 18px;
+      line-height: 32px;
+      color: #d0d6f9;
+      text-align: left;
+      width:32rem;
+      border-bottom-style: solid;
+      border-width: 1px;
+      padding-bottom: 40px;
+      border-color: #383B4B;
+    }
+    .body-right-bottom{
+      display: flex;
+      flex-direction: row;
+      column-gap: 80px;
+      padding-top: 20px;
+    }
+    .body-right-bottom-body{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .bottom-top{
+      letter-spacing: 2.36px;
+      color: #D0D6F9;
+      font-size: 14px;
+    }
+    .bottom-bottom{
+      font-family: 'Bellefair', serif;
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body> 
+  <div class="header">
+    <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
+    <div class="header-mid"></div>
+    <div class="header-right">
+      <div ><strong>00</strong> HOME</div>
+      <div class="active"><strong>01</strong> DESTINATION</div>
+      <div><strong>02</strong> CREW</div>
+      <div><strong>03</strong> TECHNOLOGY</div>
+    </div>
+  </div>
+  <div class="home-body">
+      <div class="body-left">
+        <div class="body-left-top"><span>01</span> PICK YOUR DESTINATION</div>
+        <div class="body-left-bottom"><img src="assets/destination/image-mars.png" alt="mars"></div>
+      </div>
+      <div class="body-right">
+        <div class="body-right-top">
+          <div >MOON</div>
+          <div class="active">MARS</div>
+          <div>EUROPA</div>
+          <div>TITAN</div>
+        </div>
+        <div class="body-right-mid-heading">MARS</div>
+        <div class="body-right-mid-para">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+          the tallest planetary mountain in our solar system. It’s two and a half times 
+          the size of Everest!
+        </div>
+        <div class="body-right-bottom">
+          <div class="body-right-bottom-body">
+            <div class="bottom-top">Avg. distance</div>
+            <div class="bottom-bottom">225 million km</div>
+          </div>
+          <div class="body-right-bottom-body">
+            <div class="bottom-top">Est. travel time</div>
+            <div class="bottom-bottom">9 months</div>
+          </div>
+        </div>
+      </div>
+  </div> 
+</body>
+</html>
