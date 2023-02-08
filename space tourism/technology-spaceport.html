@@ -3,30 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/technology/background-technology-desktop.jpg');
+      background-size:cover;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+      overflow: hidden;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin:25px 0 0 50px;
+      position: relative;
+    }
+    .header-left{
+      padding: 20px;
+    }
+    .header-mid{
+      position: absolute;
+      left: 130px;
+      border-width: 1px;
+      border-style: solid;
+      width: 520px;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+    .header-right{
+      letter-spacing: 2.7px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 3rem;
+      font-size: 19px;
+      
+      background-color: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(30.7742px);
+      height: 86px;
+      padding:0 165px 0px 123px;
+    }
+    .header-right >div{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+    
+    .header-right > div:hover{
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+      border-color: rgba(255, 255, 255,0.5);
+      cursor: pointer;
+    }
+    .active{
+      border-color: rgba(255, 255, 255, 1);   /*overwrite done here*/
+      pointer-events: none;                   /*dangerous property. find some other way*/
+      border-bottom-style: solid;
+      border-width: 2px;
+      margin-top: 2px;
+    }
+    .home-body{
+      display: flex;
+      flex-direction: row;
+      margin: 50px 0 0px 220px;
+      position: relative;
+    }
+    .body-left{
+      display: flex;
+      flex-direction: column;
+      row-gap: 0px;
+    }
+    .body-left-header{
+      color:  #D0D6F9;
+      font-size: 24px;
+      letter-spacing: 4.72px;
+      margin-left: -30px;
+    }
+    .body-left-header span{
+      opacity: 0.35;
+      mix-blend-mode: normal;
+    }
+    .body-left-top{
+      font-size: 16px;
+      mix-blend-mode: normal;
+      margin-top: 5rem;
+      letter-spacing: 2.7px;
+      color: #D0D6F9;
+    }
+    .body-left-mid{
+      font-family: 'Bellefair', serif;
+      font-size: 56px;
+      margin: 15px 0 20px 0;
+    }
+    .body-left-last{
+      line-height: 32px;
+      font-family: 'Barlow', sans-serif;
+      color: #d0d6d0;
+      font-size: 18px;
+      width: 540px;
+    }
+    .body-left div:not(:first-child){
+      margin-left: 100px;
+    }
+    .body-left-scroll{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      row-gap: 1.5rem;
+      top: 7rem;
+      left: -2rem;
+    }
+    .body-left-scroll div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      width: 4rem;
+      height: 4rem;
+      border-style: solid;
+      border-width: 1px;
+      mix-blend-mode: normal;
+      border-radius: 100%;
+      
+      transition: all 0.3s;
+    }
+    .body-left-scroll div:not(.scroll-active){    /*magic LMAO*/
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    .scroll-active{
+      pointer-events: none;
+      background-color: white;
+      color: black;
+    }
+    .body-left-scroll div:hover{
+      border-color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+    }
+    /*.body-right{
+      
+    }*/
+    .body-right img{
+      height: 455px;
+      position: absolute;
+      right: 4rem;
+    }
+  </style>
 </head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Spaceport
-
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch.
+<body> 
+  <div class="header">
+    <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
+    <div class="header-mid"></div>
+    <div class="header-right">
+      <div ><strong>00</strong> HOME</div>
+      <div ><strong>01</strong> DESTINATION</div>
+      <div><strong>02</strong> CREW</div>
+      <div  class="active"><strong>03</strong> TECHNOLOGY</div>
+    </div>
+  </div>
+  <div class="home-body">
+     
+      <div class="body-left">              
+          <div class="body-left-header"><span>03</span> SPACE LAUCH 101</div>
+          <div class="body-left-top">THE TERMINOLOGY...</div>
+          <div class="body-left-mid">SPACEPORT</div>
+          <div class="body-left-last">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch.
+          </div>
+      </div>
+      <div class="body-left-scroll">
+        <div ><span>1</span></div>
+        <div class="scroll-active"><span>2</span></div>
+        <div ><span>3</span></div>
+      </div>   
+      <div class="body-right"><img src="assets/technology/image-spaceport-portrait.jpg" alt="vehicle"></div>
+  </div> 
 </body>
 </html>
