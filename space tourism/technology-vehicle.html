@@ -141,16 +141,15 @@
       transition: all 0.3s;
     }
     .body-left-scroll div:not(.scroll-active){    /*magic LMAO*/
-      opacity: 0.5;
+      border-color: rgba(255, 255, 255, 0.5);
     }
     .scroll-active{
-      opacity: 1;
       pointer-events: none;
       background-color: white;
       color: black;
     }
     .body-left-scroll div:hover{
-      opacity: 1;
+      border-color: rgba(255, 255, 255, 1);
       cursor: pointer;
     }
     .body-right{
@@ -187,9 +186,9 @@
           </div>
       </div>
       <div class="body-left-scroll">
-        <div class="scroll-active">1</div>
-        <div >2</div>
-        <div >3</div>
+        <div class="scroll-active"><span>1</span></div>
+        <div ><span>2</span></div>
+        <div ><span>3</span></div>
       </div>   
       <div class="body-right"><img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="vehicle"></div>
   </div> 
