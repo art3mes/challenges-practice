@@ -17,31 +17,39 @@
       color: white;
       font-family: 'Barlow', sans-serif;
       background-image: url('assets/home/background-home-mobile.jpg');
-      background-size: 100% 100vh;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       position: relative;
       z-index: 90;
+      height: 100vh;
     }
     .header{
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 30px 30px 0 30px;
+      padding: 20px 20px 0 20px;
+      
+    }
+    .header-right{
+      transition: all 1s;
     }
     .sidebar{
       letter-spacing: 2.7px;
-      font-size: 3vw;
+      font-size: 3.7vw;
       font-family: 'Barlow Condensed', sans-serif;
       background-color:  rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(40.7742px);
       position: absolute;
       z-index: 100;
       
-      display: flex;
+      display:none;
       flex-direction: column;
-      padding: 110px 0 0 50px;
-      top: 0; right: 0; left: 40%;
+      padding: 110px 0 0 30px;
+      top: 0; right: 0; 
+      left: 40%;              /*change this to 40% when active*/
       height: 100vh;
+      transition: all 0.5s;
     }
     .sidebar >div{
       display: flex;
@@ -68,39 +76,21 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 30%;
-      row-gap: 30rem;     /*between text and explore button*/
+      margin-top: 10%;
+      row-gap: 9.5VH;     /*between text and explore button*/
     }
-    .body-left{
+    .body-top{
       color:  #D0D6F9;
-      font-size: 18px;
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-direction: column;      
       text-align: center;
-      row-gap: 30px;
+      row-gap: 20px;
     }
-    .body-right{
-      font-family: 'Bellefair', serif;
-      font-size: 32px;
-      color: #0B0D17;
-      background-color: white;
-      letter-spacing: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 100%;
-      height: 250px;
-      width: 250px;     
-      transition: all 0.5s;
-    }
-    .body-right:hover{
-      box-shadow: 0px 0px 1px 60px rgba(255, 255, 255,0.15);
-      cursor:pointer;
-    }
+    
     .body-left-top{
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 28px;
+      font-size: 1rem;
       letter-spacing: 3px;
     }
     .body-left-mid{
@@ -110,40 +100,73 @@
      
     }
     .body-left-last{
-      line-height: 32px;
-      font-size: 3vw;
+      line-height: 25px;
+      font-size: 3.6vw;
     }
     .body-bottom-container{
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    .body-bottom{
+      font-family: 'Bellefair', serif;
+      font-size:1.2rem;
+      color: #0B0D17;
+      background-color: white;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      height: 20vh;
+      width: 20vh;     
+      transition: all 0.5s;
+    }
+    .body-bottom:hover{
+      box-shadow: 0px 0px 1px 60px rgba(255, 255, 255,0.15);
+      cursor:pointer;
+    }
   </style>
 </head>
 <body>
   <div class="header">
     <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
-    <div class="header-right">
+    <div class="header-right" onclick="sidebar()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
     </div>
   </div>
   <div class="sidebar">
-    <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></div>
+    <div class="sidebar-button" onclick="sidebar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></div>
     <div class="active"><strong>00</strong> HOME</div>
     <div><strong>01</strong> DESTINATION</div>
     <div><strong>02</strong> CREW</div>
     <div><strong>03</strong> TECHNOLOGY</div>
   </div>
   <div class="home-body">
-    <div class="body-left"><div class="body-left-top">SO, YOU WANT TO TRAVEL TO</div>
+    <div class="body-top">
+      <div class="body-left-top">SO, YOU WANT TO TRAVEL TO</div>
       <div class="body-left-mid">SPACE</div>
       <div class="body-left-last">Let’s face it; if you want to go to space, you might as well genuinely go to 
         outer space and not hover kind of on the edge of it. Well sit back, and relax 
         because we’ll give you a truly out of this world experience!
       </div>
     </div>
-    <div class="body-bottom-container"><div class="body-right">EXPLORE</div></div>
+    <div class="body-bottom-container"><div class="body-bottom">EXPLORE</div></div>
   </div>
-  
+  <script>
+    var flag=0;    //zero means sidebar is closed
+    function sidebar(){
+      if(flag===0){
+        document.querySelector(".header-right").style.opacity=0;
+        document.querySelector(".sidebar").style.display="flex";
+      flag=1;
+      }
+      else{
+        document.querySelector(".header-right").style.opacity=1;
+        document.querySelector(".sidebar").style.display="none";
+        flag=0;
+      }
+    }
+  </script>
 </body>
 </html>
