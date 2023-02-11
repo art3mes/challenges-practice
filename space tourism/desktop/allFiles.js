@@ -16,7 +16,7 @@ $(document).ready(function(){
             window.open("crew-commander.html","_self");
            
         }
-        if(target=="03" || target == "03 TECHNOLOGY"){
+        if(target==3){
             window.open("technology-vehicle.html","_self");
            
         }
@@ -55,5 +55,19 @@ $(document).ready(function(){
             window.open("destination-titan.html","_self");
         }
 
+    });
+    $(".body-left-scroll div").on("click",function(event){
+        var targe=event.targe|| event.srcElement;
+        targe=targe.getAttribute("data-id");
+
+        if(targe==0){
+            window.open("technology-vehicle.html","_self");
+        }
+        if(targe==1){
+            window.open("technology-spaceport.html","_self");
+        }
+        if(targe==2){
+            window.open("technology-capsule.html","_self");
+        }
     });
 });
