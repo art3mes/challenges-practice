@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script  src="allFiles.js"></script>
   <title>Space tourism website</title>
   <style>
     body{
@@ -162,10 +163,10 @@
     <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
     <div class="header-mid"></div>
     <div class="header-right">
-      <div ><strong>00</strong> HOME</div>
-      <div ><strong>01</strong> DESTINATION</div>
-      <div class="active"><strong>02</strong> CREW</div>
-      <div><strong>03</strong> TECHNOLOGY</div>
+      <div data-id="0" ><strong>00</strong> HOME</div>
+      <div data-id="1" ><strong>01</strong> DESTINATION</div>
+      <div data-id="2" class="active"><strong>02</strong> CREW</div>
+      <div data-id="3"><strong>03</strong> TECHNOLOGY</div>
     </div>
   </div>
   <div class="home-body">
@@ -179,10 +180,10 @@
             station systems flight engineer. 
           </div>
           <div class="body-left-scroll">
-            <div ></div>
-            <div ></div>
-            <div class="scroll-active"></div>
-            <div></div>
+            <div data-id="0"></div>
+            <div data-id="1"></div>
+            <div data-id="2" class="scroll-active"></div>
+            <div data-id="3"></div>
           </div>       
       </div>
       <div class="body-right"><img src="assets/crew/image-victor-glover.png" alt="pilot"></div>

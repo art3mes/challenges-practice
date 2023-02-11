@@ -1,24 +1,42 @@
 $(document).ready(function(){
     $(".header-right div").on("click",function(event){
         var target = event.target || event.srcElement;
-        console.log(target.textContent); 
-        target=target.textContent;
+       
+        target=target.getAttribute("data-id");
 
-        if(target=="00"|| target=="00 HOME"){
+        if(target==0){
             window.open("index.html","_self");
-            console.log(target);
+            
         }
-        if(target=="01"|| target=="01 DESTINATION"){
+        if(target==1){
             window.open("destination-moon.html","_self");
-            console.log(target); 
+           
         }
-        if(target=="02" || target== "02 CREW"){
+        if(target==2){
             window.open("crew-commander.html","_self");
-            console.log(target); 
+           
         }
-        if(target=="03" || target == "03 TECHNOLOGY"){
+        if(target==3){
             window.open("technology-vehicle.html","_self");
-            console.log(target); 
+           
+        }
+    });
+
+    $(".body-left-scroll div").on("click",function(event){
+        var target=event.target || event.srcElement;
+        target=target.getAttribute("data-id");
+        console.log(target);
+        if(target==0){
+            window.open("crew-commander.html","_self");
+        }
+        if(target==1){
+            window.open("crew-specialist.html","_self");
+        }
+        if(target==2){
+            window.open("crew-pilot.html","_self");
+        }
+        if(target==3){
+            window.open("crew-engineer.html","_self");
         }
     });
 });
