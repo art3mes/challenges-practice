@@ -1,4 +1,6 @@
-
+      body{
+        background-image: url('../assets/destination/background-destination-desktop.jpg');
+      }
     .home-body{
         display: flex;
         flex-direction: row;

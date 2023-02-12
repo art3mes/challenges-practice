@@ -1,4 +1,6 @@
-
+      body{
+        background-image: url('../assets/technology/background-technology-desktop.jpg');
+      }
     .home-body{
         display: flex;
         flex-direction: row;
