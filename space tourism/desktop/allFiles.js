@@ -57,16 +57,26 @@ $(document).ready(function(){
 
     });
     $(".body-left-scroll div").on("click",function(event){
-        var targe=event.targe|| event.srcElement;
-        targe=targe.getAttribute("data-id");
-
-        if(targe==0){
+        var target=event.target|| event.srcElement;
+        // target=target.getAttribute("data-id");
+        target=target.innerHTML;
+        console.log(target);
+        // if(target==="vehicle"){
+        //     window.open("technology-vehicle.html","_self");
+        // }
+        // if(target==="spaceport"){
+        //     window.open("technology-spaceport.html","_self");
+        // }
+        // if(target==="capsule"){
+        //     window.open("technology-capsule.html","_self");
+        // }
+        if(target==="<span>1</span>" || target==="1"){
             window.open("technology-vehicle.html","_self");
         }
-        if(targe==1){
+        if(target==="<span>2</span>" || target==="2"){
             window.open("technology-spaceport.html","_self");
         }
-        if(targe==2){
+        if(target==="<span>3</span>" ||target==="3"){
             window.open("technology-capsule.html","_self");
         }
     });
