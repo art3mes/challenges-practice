@@ -12,4 +12,3 @@ window.addEventListener('load', function() {
       // if this is a dropdown button being clicked, toggle the show class
     })
   })
-  
