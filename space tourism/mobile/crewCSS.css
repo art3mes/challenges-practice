@@ -73,7 +73,6 @@ body{
     align-items: center;
   }
   .body-header{
-    color:  #D0D6F9;
     font-size: 16px;
     letter-spacing: 4.72px;
     margin-bottom: 36px;
@@ -141,7 +140,7 @@ body{
   .body-bottom-last{
     line-height:25px;
     font-family: 'Barlow', sans-serif;
-    color: #d0d6d0;
+    color: #d0d6f9;
     font-size: 15px;
     width: 90%;
   }
