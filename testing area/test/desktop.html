@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,35 @@
    
     <title>Document</title>
     <script>
+        
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                 window.location.href = "index.html";
+                console.log("mobile");
+            } else {
+                console.log("pc");
+                 window.location.href = "desktop.html";
+            }
+        
+    </script>
+</head>
+<body>
+    <h1>DEsKTOP HTML: PAGE</h1>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <script>       
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             window.location.href = "index.html";
-        } else {
-            window.location.href = "desktop.html";
         }
     </script>
 </head>
 <body>
-    <h1>DEsKTOP HTML: PAGEpop</h1>
+    <h1>DESKTOP HTML: PAGE</h1>
 </body>
 </html>
