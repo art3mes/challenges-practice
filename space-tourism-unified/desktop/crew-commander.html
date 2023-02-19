@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="files/commonCSS.css">
+  <link rel="stylesheet" href="files/crewCSS.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script  src="files/allFiles.js"></script>
+  <title>Space tourism website</title>
+  <style> 
+    .body-right img{
+      height: 170%;
+      position: absolute;
+      bottom: -12.5rem;
+      left: 2.5rem;
+    }
+  </style>
+</head>
+<body> 
+  <div class="header">
+    <div class="header-left"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></div>
+    <div class="header-mid"></div>
+    <div class="header-right">
+      <div data-id="0" ><strong>00</strong> HOME</div>
+      <div data-id="1" ><strong>01</strong> DESTINATION</div>
+      <div data-id="2" class="active"><strong>02</strong> CREW</div>
+      <div data-id="3"><strong>03</strong> TECHNOLOGY</div>
+    </div>
+  </div>
+  <div class="home-body">
+      <div class="body-left">              
+          <div class="body-left-header"><span>02</span> MEET YOUR CREW</div>
+          <div class="body-left-top">COMMANDER</div>
+          <div class="body-left-mid">DOUGLAS HURLEY</div>
+          <div class="body-left-last">  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </div>
+          <div class="body-left-scroll">
+            <div data-id="0" class="scroll-active" ></div>
+            <div data-id="1"></div>
+            <div data-id="2"></div>
+            <div data-id="3"></div>
+          </div>       
+      </div>
+      <div class="body-right"><img src="assets/crew/image-douglas-hurley.png" alt="commander"></div>
+  </div> 
+</body>
+</html>
